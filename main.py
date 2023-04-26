@@ -41,5 +41,18 @@ def share(id):
         return "Post not found"
     return render_template("shared.html", post=post)
 
+@app.route("/signup")
+def signup():
+    return render_template("signup.html")
+
+@app.route("/login")
+def login():
+    return render_template("login.html")
+
+@app.errorhandler(404)
+def not_found(e):
+    return render_template("404.html")
+
+
 if __name__ == '__main__':
     app.run(debug=True)
