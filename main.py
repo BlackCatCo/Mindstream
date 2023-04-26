@@ -29,6 +29,7 @@ def feed():
         posts.insert(0, post)
         with open(db_file, 'w') as f:
             json.dump(posts, f, indent=4)
+        return redirect("/feed", code=303)
     posts_sorted = sorted(posts, key=itemgetter("timestamp"), reverse=True)
     return render_template("base.html", posts=posts_sorted)
 
