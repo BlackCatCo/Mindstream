@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+textarea {
+  resize: vertical;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #222;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    padding: 1rem;
+}
+
+.navbar_title {
+    color: #fff;
+}
+
+.post_form {
+    display: flex;
+}
+
+.post_form input[type="text"],
+.post_form textarea {
+    border: none;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.post_form button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.post_form button[type="submit"]:hover {
+    background-color: #3e8e41;
+    
+}
+
+
+.posts_container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.post {
+  color: black;
+  background-color: white;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 7px rgb(255, 255, 255);
+  transition: box-shadow 0.2s ease-in-out;
+  
+  
+}
+
+.post:hover {
+  box-shadow: 0 0 15px rgb(173, 171, 171);
+}
+
+.post_title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.post_description {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.post_timestamp {
+  font-size: 14px;
+  color: gray;
+}
+
+.share_button{
+  font-size: 14px;
+  color: gray;
+  cursor: pointer;
+  padding: 3px;
+  margin-top: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.share_button:hover{
+  transform: scale(1.1)
+}

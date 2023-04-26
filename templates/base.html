@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>Mindstream</title>
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="navbar_title">Mindstream</h1>
+        <form action="/feed" method="POST" class="post_form">
+            <input type="text" name="title" placeholder="Title" required>
+            <textarea name="description" placeholder="What's on your mind?" required></textarea>
+            <button type="submit">Post</button>
+        </form>
+    </nav>
+    <div class="posts_container">
+        {% for post in posts %}
+        <div class="post">
+          <h2 class="post_title">{{ post['title'] }}</h2>
+          <p class="post_description">{{ post['description'] }}</p>
+          <p class="post_timestamp">{{ post['timestamp'] }}</p>
+          <button class="share_button" data-id="{{ post['id'] }}">Share</button>
+        </div>
+        {% endfor %}
+    </div>
+
+    <script>
+        const shareButtons = document.querySelectorAll('.share_button');
+        shareButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const id = button.getAttribute('data-id');
+                const shareUrl = `localhost:5000/feed/share/${id}`;
+                navigator.clipboard.writeText(shareUrl)
+                    .then(() => alert('Share link copied to clipboard!'))
+                    .catch(() => alert('Error copying share link to clipboard.'));
+            });
+        });
+    </script>
+</body>
+</html>
