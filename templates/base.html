@@ -24,6 +24,7 @@
         {% for post in posts %}
         <div class="post">
           <h2 class="post_title">{{ post['title'] }}</h2>
+          <p class="post_author"> {{post['author'] }}</p>
           <p class="post_description">{{ post['description'] }}</p>
           <p class="post_timestamp">{{ post['timestamp'] }}</p>
           <button class="share_button" data-id="{{ post['id'] }}">Share</button>

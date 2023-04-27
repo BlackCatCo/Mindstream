@@ -34,7 +34,13 @@ def feed():
         title = request.form["title"]
         description = request.form["description"]
 
-        handler.posts.add(title, description, None)
+        key = request.cookies.get('key')
+        username = 'Anonymous'
+        if key != None:
+            user = handler.user.get(key)
+            username = user['name']
+
+        handler.posts.add(title, description, username)
 
         return redirect("/feed", code=303)
     
