@@ -1,7 +1,7 @@
 {
     "users": [
         {
-            "key": "2b98d2d65e9a067890b60945a28bf23132d84d74cfa48ea21a6a82824f53f468",
+            "key": "c2e35cd55b223f17a9fedf67c6c8669c3b604b7b3bd921466c966ccd81b0dd79",
             "name": "Thbop",
             "password": "34hNpC6qjE5TaZN",
             "tags": [],
@@ -9,6 +9,22 @@
         }
     ],
     "posts": [
+        {
+            "id": "3bdf470a-5022-4af2-9a34-a32bb85b409b",
+            "title": "fasdf",
+            "description": "asdfsdf",
+            "author": "Anonymous",
+            "timestamp": "2023-04-28 09:51",
+            "tags": []
+        },
+        {
+            "id": "f9d3e20d-d44f-41f3-9156-77bada87242b",
+            "title": "This is an other test",
+            "description": "test test",
+            "author": "Thbop",
+            "timestamp": "2023-04-28 09:47",
+            "tags": []
+        },
         {
             "id": "8d48877b-53b0-43b6-beeb-ece20127b2d4",
             "title": "Cheese",

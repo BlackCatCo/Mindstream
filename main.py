@@ -45,7 +45,7 @@ def feed():
         return redirect("/feed", code=303)
     
     posts_sorted = sorted(posts, key=itemgetter("timestamp"), reverse=True)
-    return render_template("base.html", posts=posts_sorted)
+    return render_template("base.html", posts=posts_sorted, user=handler.user.get( request.cookies.get('key') ))
 
 
 @app.route("/feed/share/<id>")
@@ -104,6 +104,12 @@ def login():
         return res
     else:
         return render_template("login.html", error=None)
+
+@app.route("/logout")
+def logout():
+    res = make_response(redirect('/feed'))
+    res.set_cookie('key', '', max_age=0)
+    return res
 
 @app.errorhandler(404)
 def not_found(e):

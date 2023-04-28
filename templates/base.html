@@ -14,8 +14,13 @@
 <body>
     <nav class="navbar">
         <h1 class="navbar_title">Mindstream</h1>
-        <a href="/login"><h1>Login</h1></a>
-        <a href="/signup"><h1>Signup</h1></a>
+        {% if user == None %}
+            <a href="/login"><h1>Login</h1></a>
+            <a href="/signup"><h1>Signup</h1></a>
+        {% else %}
+            <a href="/logout"><h1>Logout</h1></a>
+            Hello, {{ user['name'] }}!
+        {% endif %}
         <form action="/feed" method="POST" class="post_form">
             <input type="text" name="title" placeholder="Title" required>
             <textarea name="description" placeholder="What's on your mind?" required></textarea>
