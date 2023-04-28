@@ -18,15 +18,15 @@
             <div class="btn-container">
                 <a href="/login" class="user-btn"><button><h1>Login</h1></button></a>
                 <a href="/signup" class="user-btn"><button><h1>Signup</h1></button></a>
-            </div>    
-        
-        {% else %}  
+            </div>
+
+        {% else %}
             <h1 class="hello">You are logged in as {{ user['name'] }}!</h1>
             <div class="log-container">
-                
+
                 <a href="/logout" class="user-btn"><button><h1>Logout</h1></button></a>
             </div>
-            
+
         {% endif %}
         <form action="/feed" method="POST" class="post_form">
             <input type="text" name="title" placeholder="Title" required>
@@ -44,11 +44,15 @@
           {% if post['author'] == "Anonymous" %}
             <h1 class="post_author anonymous_false">Posted by {{post['author'] }}</h1>
           {% else %}
-            <h1 class="post_author anonymous_false">Posted by {{post['author'] }}</h1> 
-          {% endif %}  
+            <h1 class="post_author anonymous_false">Posted by {{post['author'] }}</h1>
+          {% endif %}
         </div>
         {% endfor %}
     </div>
+    <div class="discord-button">
+        <a href="https://discord.gg/X6QePymCQn">Join our Discord!</a>
+      </div>
+
 
     <script>
         const shareButtons = document.querySelectorAll('.share_button');
