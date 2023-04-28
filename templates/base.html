@@ -14,6 +14,8 @@
 <body>
     <nav class="navbar">
         <h1 class="navbar_title">Mindstream</h1>
+        <a href="/login"><h1>Login</h1></a>
+        <a href="/signup"><h1>Signup</h1></a>
         <form action="/feed" method="POST" class="post_form">
             <input type="text" name="title" placeholder="Title" required>
             <textarea name="description" placeholder="What's on your mind?" required></textarea>
@@ -24,10 +26,14 @@
         {% for post in posts %}
         <div class="post">
           <h2 class="post_title">{{ post['title'] }}</h2>
-          <p class="post_author"> {{post['author'] }}</p>
           <p class="post_description">{{ post['description'] }}</p>
           <p class="post_timestamp">{{ post['timestamp'] }}</p>
           <button class="share_button" data-id="{{ post['id'] }}">Share</button>
+          {% if post['author'] == "Anonymous" %}
+            <h1 class="post_author anonymous_true">Posted by {{post['author'] }}</h1>
+          {% else %}
+            <h1 class="post_author anonymous_false">Posted by {{post['author'] }}</h1> 
+          {% endif %}  
         </div>
         {% endfor %}
     </div>
@@ -37,7 +43,8 @@
         shareButtons.forEach(button => {
             button.addEventListener('click', () => {
                 const id = button.getAttribute('data-id');
-                const shareUrl = `localhost:5000/feed/share/${id}`;
+                const baseUrl = "localhost:5000"
+                const shareUrl = baseUrl + `/feed/share/${id}`;
                 navigator.clipboard.writeText(shareUrl)
                     .then(() => alert('Share link copied to clipboard!'))
                     .catch(() => alert('Error copying share link to clipboard.'));
