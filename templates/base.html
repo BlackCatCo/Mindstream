@@ -15,11 +15,18 @@
     <nav class="navbar">
         <h1 class="navbar_title">Mindstream</h1>
         {% if user == None %}
-            <a href="/login"><h1>Login</h1></a>
-            <a href="/signup"><h1>Signup</h1></a>
-        {% else %}
-            <a href="/logout"><h1>Logout</h1></a>
-            Hello, {{ user['name'] }}!
+            <div class="btn-container">
+                <a href="/login" class="user-btn"><button><h1>Login</h1></button></a>
+                <a href="/signup" class="user-btn"><button><h1>Signup</h1></button></a>
+            </div>    
+        
+        {% else %}  
+            <h1 class="hello">You are logged in as {{ user['name'] }}!</h1>
+            <div class="log-container">
+                
+                <a href="/logout" class="user-btn"><button><h1>Logout</h1></button></a>
+            </div>
+            
         {% endif %}
         <form action="/feed" method="POST" class="post_form">
             <input type="text" name="title" placeholder="Title" required>
@@ -35,7 +42,7 @@
           <p class="post_timestamp">{{ post['timestamp'] }}</p>
           <button class="share_button" data-id="{{ post['id'] }}">Share</button>
           {% if post['author'] == "Anonymous" %}
-            <h1 class="post_author anonymous_true">Posted by {{post['author'] }}</h1>
+            <h1 class="post_author anonymous_false">Posted by {{post['author'] }}</h1>
           {% else %}
             <h1 class="post_author anonymous_false">Posted by {{post['author'] }}</h1> 
           {% endif %}  
