@@ -69,6 +69,7 @@ body {
   margin-bottom: 20px;
   box-shadow: 0 0 7px rgb(255, 255, 255);
   transition: box-shadow 0.2s ease-in-out;
+
   
   
 }
@@ -82,11 +83,6 @@ body {
   margin-bottom: 10px;
 }
 
-.post_author {
-  font-size: 12px;
-  margin-bottom: 10px;
-}
-
 .post_description {
   font-size: 18px;
   margin-bottom: 10px;
@@ -96,6 +92,7 @@ body {
   font-size: 14px;
   color: gray;
 }
+
 
 .share_button{
   font-size: 14px;
@@ -108,4 +105,17 @@ body {
 
 .share_button:hover{
   transform: scale(1.1)
+}
+
+.post_author{
+  font-size: medium;
+  margin-top: 10px;
+}
+
+.anonymous_true{
+  color: rgb(226, 113, 113);
+}
+
+.anonymous_false{
+  color: #3e8e41;
 }
