@@ -36,8 +36,8 @@
         .navbar_title {
             color: #fff;
             cursor: pointer;
-           
-            
+
+
         }
 
         .post_form {
@@ -114,21 +114,40 @@
           align-items: center;
           margin-top: 100px;
         }
-        
+
         #home-btn {
-          font-size: 50px;
-          background-color: #4CAF50;
-          color: #1f5220;
+          font-size: 30px;
+          background-color: #f2f2f2;
+          color: #777;
           cursor: pointer;
-          border-radius: 10px;
+          border-radius: 5px;
           border: none;
-          padding: 20px;
-          transition: transform 0.3s ease-in-out;
-          box-shadow: 5px 5px 5px rgb(148, 226, 138);
+          padding: 15px;
+          transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+          box-shadow: 2px 2px 2px #ddd;
+          position: relative;
+          overflow: hidden;
         }
-        
+
         #home-btn:hover {
           transform: scale(1.1);
+          background-color: #ddd;
+        }
+
+        
+
+
+        .post_author{
+          font-size: medium;
+          margin-top: 10px;
+        }
+        
+        .anonymous_true{
+          color: rgb(226, 113, 113);
+        }
+        
+        .anonymous_false{
+          color: #000000;
         }
     </style>
 </head>
@@ -141,6 +160,11 @@
           <h2 class="post_title">{{ post['title'] }}</h2>
           <p class="post_description">{{ post['description'] }}</p>
           <p class="post_timestamp">{{ post['timestamp'] }}</p>
+          {% if post['author'] == "Anonymous" %}
+            <h1 class="post_author anonymous_false">Posted by {{post['author'] }}</h1>
+          {% else %}
+            <h1 class="post_author anonymous_false">Posted by {{post['author'] }}</h1> 
+          {% endif %} 
         </div>
     </div>
     <div class="btn-container">
