@@ -14,13 +14,13 @@ body {
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #111;
-    padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  padding: 1rem;
+  position: relative;
 }
-
 .navbar_title {
     color: #fff;
 }
@@ -117,5 +117,44 @@ body {
 }
 
 .anonymous_false{
-  color: #3e8e41;
+  color: #000000;
+}
+
+
+.hello{
+  color: #9176d1;
+}
+
+.btn-container {
+  position: absolute;
+  left: 0;
+  top: 50%; 
+  transform: translateY(-50%);
+  margin-left: 150px;
+}
+.user-btn button{
+  background-color: #4CAF50;
+  color: #143a15;
+  padding: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  border-radius: 10%;
+  border: none;
+  margin-left: 30px;
+  
+  
+}
+
+.user-btn button:hover{
+  background-color: #39753b;
+  
+}
+
+.log-container{
+  position: absolute;
+  left: 0%;
+  top: 50%; 
+  transform: translateY(-50%);
+  margin-left: 150px;
 }
