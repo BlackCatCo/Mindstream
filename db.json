@@ -1,14 +1,29 @@
 {
     "users": [
         {
-            "key": "c2e35cd55b223f17a9fedf67c6c8669c3b604b7b3bd921466c966ccd81b0dd79",
+            "key": "c63054c41bfbdab1e9501c523638124389ee297ac92f6c23db83c20426a2a938",
             "name": "Thbop",
             "password": "34hNpC6qjE5TaZN",
             "tags": [],
+            "permission-level": 1
+        },
+        {
+            "key": "6df622fb7fe0d9b16beea2ad3aa01c4b2bb5287cb4d98f991cbdce4dc757848c",
+            "name": "BeefMan",
+            "password": "X8ANZr9A4VseXKC",
+            "tags": "[]",
             "permission-level": 0
         }
     ],
     "posts": [
+        {
+            "id": "56e92944-a8ef-4978-b9c6-8526c635e409",
+            "title": "fdsf",
+            "description": "asdfasdf",
+            "author": "BeefMan",
+            "timestamp": "2023-04-28 21:37",
+            "tags": []
+        },
         {
             "id": "3bdf470a-5022-4af2-9a34-a32bb85b409b",
             "title": "fasdf",

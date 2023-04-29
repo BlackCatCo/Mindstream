@@ -1,0 +1,11 @@
+{% extends "admin/base.html" %}
+
+{% block body %}
+<div class="container-fluid">
+    <p class="h1">Raw</p>
+    <form>
+        <textarea class="form-control bg-dark text-light" rows="{{ rows }}" style="overflow:hidden">{{ db_text }}</textarea>
+    </form>
+</div>
+
+{% endblock %}

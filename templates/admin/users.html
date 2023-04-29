@@ -1,0 +1,30 @@
+{% extends "admin/base.html" %}
+
+{% block body %}
+<div class="container-fluid">
+    <p class="h1">Users</p>
+</div>
+<table class="table table-dark table-hover table-striped">
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Password</th>
+            <th>Permission</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for u in users %}
+        
+            <tr>
+                
+                <td><a href="users/{{ u['name'] }}" class="text-info">{{ u['name'] }}</a></td>
+                <td>{{ u['password'] }}</td>
+                <td>{{ u['permission-level'] }}</td>
+                
+            </tr>
+        
+        {% endfor %}
+    </tbody>
+  </table>
+
+{% endblock %}

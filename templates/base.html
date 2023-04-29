@@ -25,6 +25,9 @@
             <div class="log-container">
 
                 <a href="/logout" class="user-btn"><button><h1>Logout</h1></button></a>
+                {% if user['permission-level'] > 0 %}
+                    <a href="/admin" class="user-btn"><button><h1>Admin</h1></button></a>
+                {% endif %}
             </div>
 
         {% endif %}

@@ -1,10 +1,13 @@
 from flask import Flask, render_template, request, redirect, make_response
 from operator import itemgetter
 
+# Maybe add global paw = True or False depending on this expression. (paw = pythonanywhere)
 try:
     from myapp.scripts.database.handler import Handler
+    from myapp.scripts.admin import Admin
 except ImportError:
     from scripts.database.handler import Handler
+    from scripts.admin import Admin
 
 
 
@@ -20,7 +23,8 @@ app = Flask(__name__)
 handler = Handler()
 posts = handler.posts.get_all()
 
-
+admin = Admin(app, handler)
+admin.run()
 
 
 @app.route("/")

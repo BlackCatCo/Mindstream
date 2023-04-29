@@ -1,0 +1,24 @@
+{% extends "admin/base.html" %}
+
+{% block body %}
+<div class="container-fluid">
+    <p class="h1">User: {{ e_user['name'] }}.</p>
+    <div class="row">
+        <div class="col">
+            <form action="{{ e_user['name'] }}/update" method="POST">
+                {% for k in e_user %}
+                <div class="mb-3 mt-3">
+                    <label for="{{ k }}" class="form-label">{{ k.title() }}:</label>
+                    <input class="form-control bg-dark text-light" id="{{ k }}" name="{{ k }}" value="{{ e_user[k] }}">
+                </div>
+                {% endfor %}
+                <button type="submit" class="btn btn-primary">Update</button>
+                <a href="{{ e_user['name'] }}/remove" class="btn btn-danger">Remove</a>
+            </form> 
+        </div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+</div>
+
+{% endblock %}
