@@ -21,7 +21,7 @@
             </div>
 
         {% else %}
-            <h1 class="hello">You are logged in as {{ user['name'] }}!</h1>
+
             <div class="log-container">
 
                 <a href="/logout" class="user-btn"><button><h1>Logout</h1></button></a>
@@ -54,8 +54,10 @@
     </div>
     <div class="discord-button">
         <a href="https://discord.gg/X6QePymCQn">Join our Discord!</a>
-      </div>
-
+    </div>
+    <div class="user-show">
+        <a>Logged in as {{ user['name'] }}!</a>
+    </div>
 
     <script>
         const shareButtons = document.querySelectorAll('.share_button');
