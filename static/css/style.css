@@ -211,3 +211,27 @@ scrollbar-thumb {
 .discord-button:hover {
   transform: scale(1.2);
 }
+
+.user-show {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: #d39248;
+  padding: 10px;
+  border-radius: 10px 10px 10px 10px;
+  z-index: 999;
+  margin: 30px;
+  transition: transform 0.5s;
+  transform: scale(1);
+  cursor: pointer;
+}
+
+.user-show a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.user-show:hover {
+  transform: scale(1.2);
+}
