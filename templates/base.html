@@ -29,6 +29,9 @@
                     <a href="/admin" class="user-btn"><button><h1>Admin</h1></button></a>
                 {% endif %}
             </div>
+            <div class="user-show">
+                <a>Logged in as {{ user['name'] }}!</a>
+            </div>
 
         {% endif %}
         <form action="/feed" method="POST" class="post_form">
@@ -55,9 +58,7 @@
     <div class="discord-button">
         <a href="https://discord.gg/X6QePymCQn">Join our Discord!</a>
     </div>
-    <div class="user-show">
-        <a>Logged in as {{ user['name'] }}!</a>
-    </div>
+
 
     <script>
         const shareButtons = document.querySelectorAll('.share_button');
