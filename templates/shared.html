@@ -166,17 +166,6 @@
             <h1 class="post_author anonymous_false">Posted by {{post['author'] }}</h1> 
           {% endif %} 
         </div>
-        {% for comment in post['comments'] %}
-        <div class="post">
-          <b class="post_author anonymous_false">{{comment['author'] }}</b>
-          <p class="post_description">{{ comment['text'] }}</p>
-          <p class="post_timestamp">{{ comment['timestamp'] }}</p>
-        </div>
-        {% endfor %}
-        <form action="" method="POST">
-          <textarea name="comment" placeholder="Type your comment here..."></textarea>
-          <button type="submit">Send</button>
-        </form>
     </div>
     <div class="btn-container">
       <a href="/feed"><button id="home-btn">Go back to home</button></a>

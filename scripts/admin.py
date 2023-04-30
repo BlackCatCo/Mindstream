@@ -7,9 +7,10 @@ class Admin:
         self.handler = handler
     
     def check_admin(self, key):
-        perms = self.handler.user.get(key)['permission-level']
-        if perms > 0: return True
-        else: return False
+        user = self.handler.user.get(key)
+        if user != None:
+            if user['permission-level'] > 0: return True
+            else: return False
     
     def admin(self):
         @self.app.route('/admin')
@@ -28,6 +29,17 @@ class Admin:
                 return render_template('admin/dashboard.html', site='dashboard', user=self.handler.user.get(request.cookies.get('key')))
             else:
                 return render_template("404.html")
+            
+        @self.app.route('/admin/dashboard/migrate')
+        def admin_dash_migrate():
+            key = request.cookies.get('key')
+            if self.check_admin(key):
+                self.handler.migrate()
+
+                return redirect('/admin/dashboard')
+            else:
+                return render_template("404.html")
+
             
     def users(self):
         @self.app.route('/admin/users')
@@ -83,11 +95,18 @@ class Admin:
     def raw(self):
         @self.app.route('/admin/raw')
         def admin_raw():
-            db_text = json.dumps(self.handler.db.data, indent=4)
-            return render_template('admin/raw.html', db_text=db_text, rows=len(db_text.splitlines())+2, site='raw', user=self.handler.user.get(request.cookies.get('key')))
+            key = request.cookies.get('key')
+            if self.check_admin(key):
+                db_text = json.dumps(self.handler.db.data, indent=4)
+                return render_template('admin/raw.html', db_text=db_text, rows=len(db_text.splitlines())+2, site='raw', user=self.handler.user.get(request.cookies.get('key')))
+
+            else:
+                return render_template("404.html")
+            
 
     def run(self):
         self.admin()
         self.dashboard()
         self.users()
         self.raw()
+
