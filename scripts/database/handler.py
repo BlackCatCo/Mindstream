@@ -10,5 +10,9 @@ class Handler:
         self.user = User(self.db)
         self.posts = Posts(self.db)
     
+    def migrate(self):
+        self.user.migrate()
+        self.posts.migrate()
+    
 
 

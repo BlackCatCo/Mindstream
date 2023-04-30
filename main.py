@@ -13,15 +13,13 @@ except ImportError:
 
 app = Flask(__name__)
 
-# db_file = 'db.json'
-# try:
-#     with open(db_file) as f:
-#         posts = json.load(f)
-# except FileNotFoundError:
-#     posts = []
 
 handler = Handler()
 posts = handler.posts.get_all()
+
+
+handler.migrate()
+
 
 admin = Admin(app, handler)
 admin.run()
@@ -52,11 +50,19 @@ def feed():
     return render_template("base.html", posts=posts_sorted, user=handler.user.get( request.cookies.get('key') ))
 
 
-@app.route("/feed/share/<id>")
+@app.route("/feed/share/<id>", methods=['GET', 'POST'])
 def share(id):
     post = next((p for p in posts if p["id"] == id), None)
     if not post:
         return "Post not found"
+    
+    if request.method == "POST":
+        comment_text = request.form.get('comment')
+        if comment_text != '':
+            user = handler.user.get( request.cookies.get('key') )
+            if user != None:
+                handler.posts.add_comment(id, comment_text, user['name'])
+
     return render_template("shared.html", post=post)
 
 @app.route("/signup", methods=["GET", "POST"])

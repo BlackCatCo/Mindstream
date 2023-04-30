@@ -52,6 +52,7 @@
           {% else %}
             <h1 class="post_author anonymous_false">Posted by {{post['author'] }}</h1>
           {% endif %}
+          <a href="feed/share/{{ post['id'] }}">View comments</a>
         </div>
         {% endfor %}
     </div>

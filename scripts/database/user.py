@@ -89,7 +89,6 @@ class User:
             new_users.append(new_user)
         self.db.data['users'] = new_users
 
-        self.ai.migrate()
         self.db.save()
     
     def remove(self, key):
