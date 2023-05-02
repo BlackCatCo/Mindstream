@@ -53,12 +53,12 @@ def share(id):
     if not post:
         return "Post not found"
     
-    # if request.method == "POST":
-    #     comment_text = request.form.get('comment')
-    #     if comment_text != '':
-    #         user = handler.user.get( request.cookies.get('key') )
-    #         if user != None:
-    #             handler.posts.add_comment(id, comment_text, user['name'])
+    if request.method == "POST":
+        comment_text = request.form.get('comment')
+        if comment_text != '':
+            user = handler.user.get( request.cookies.get('key') )
+            if user != None:
+                handler.posts.add_comment(id, comment_text, user['name'])
 
     return render_template("shared.html", post=post)
 
