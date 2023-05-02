@@ -44,6 +44,8 @@ def feed():
         return redirect("/feed", code=303)
     
     posts_sorted = sorted(posts, key=itemgetter("timestamp"), reverse=True)
+    for p in posts_sorted:
+        p['comment-count'] = len(p['comments'])
     return render_template("base.html", posts=posts_sorted, user=handler.user.get( request.cookies.get('key') ))
 
 

@@ -47,7 +47,7 @@
           <p class="post_description">{{ post['description'] }}</p>
           <p class="post_timestamp">{{ post['timestamp'] }}</p>
           <button class="share_button" data-id="{{ post['id'] }}">Share</button>
-          <a href="feed/share/{{ post['id'] }}"><button class="comment_button">View Comments</button></a>
+          <a href="feed/share/{{ post['id'] }}"><button class="comment_button">View Comments ({{ post['comment-count'] }})</button></a>
           {% if post['author'] == "Anonymous" %}
             <h1 class="post_author anonymous_false">Posted by {{post['author'] }}</h1>
           {% else %}

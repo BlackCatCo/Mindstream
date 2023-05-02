@@ -51,7 +51,8 @@
             "author": "Thbop",
             "timestamp": "2023-05-02 12:34",
             "tags": [],
-            "comments": []
+            "comments": [],
+            "comment-count": 0
         },
         {
             "id": "969fbd03-d54e-4403-b205-6fb9c0fb66b4",
@@ -60,7 +61,8 @@
             "author": "Ghost",
             "timestamp": "2023-05-02 12:33",
             "tags": [],
-            "comments": []
+            "comments": [],
+            "comment-count": 0
         },
         {
             "id": "1e1a7a02-acf3-4816-9887-adfac667a90b",
@@ -69,7 +71,8 @@
             "author": "Ghost",
             "timestamp": "2023-05-02 10:27",
             "tags": [],
-            "comments": []
+            "comments": [],
+            "comment-count": 0
         },
         {
             "id": "69d63fe4-fa35-41cd-8bde-a97cc07a32b5",
@@ -78,7 +81,8 @@
             "author": "Ghost",
             "timestamp": "2023-05-02 10:26",
             "tags": [],
-            "comments": []
+            "comments": [],
+            "comment-count": 0
         },
         {
             "id": "268c0c54-1bd1-46bc-b396-39d3d1f6e0cb",
@@ -87,7 +91,8 @@
             "author": "Ghost",
             "timestamp": "2023-05-02 10:26",
             "tags": [],
-            "comments": []
+            "comments": [],
+            "comment-count": 0
         },
         {
             "id": "f488213c-e422-42dc-af07-10fdf280a469",
@@ -96,7 +101,8 @@
             "author": "Ghost",
             "timestamp": "2023-05-02 10:24",
             "tags": [],
-            "comments": []
+            "comments": [],
+            "comment-count": 0
         },
         {
             "id": "df87e50b-f4ef-4335-8d80-d13db8c8f31b",
@@ -105,7 +111,8 @@
             "author": "Ghost",
             "timestamp": "2023-05-02 10:23",
             "tags": [],
-            "comments": []
+            "comments": [],
+            "comment-count": 0
         },
         {
             "id": "5e14af16-03bc-4b5c-a53f-cb8e26603b91",
@@ -114,7 +121,8 @@
             "author": "Ghost",
             "timestamp": "2023-05-02 10:22",
             "tags": [],
-            "comments": []
+            "comments": [],
+            "comment-count": 0
         },
         {
             "id": "7e44cb62-1ee8-4348-a16e-0785d094b0da",
@@ -123,7 +131,21 @@
             "author": "Ghost",
             "timestamp": "2023-05-02 14:16",
             "tags": [],
-            "comments": []
+            "comments": [
+                {
+                    "id": "3d787200-1a2a-4b2c-ab9f-bd9bfd71b3f2",
+                    "author": "Thbop",
+                    "text": "Cheese 2",
+                    "timestamp": "2023-05-02 12:42"
+                },
+                {
+                    "id": "7a4e57e7-810d-412e-8640-184989121ea2",
+                    "author": "Thbop",
+                    "text": "Cheese",
+                    "timestamp": "2023-05-02 12:42"
+                }
+            ],
+            "comment-count": 0
         },
         {
             "id": "b5ee1f20-8ddf-483b-ad3d-971241d60e34",
@@ -132,7 +154,8 @@
             "author": "Ghost",
             "timestamp": "2023-05-02 14:12",
             "tags": [],
-            "comments": []
+            "comments": [],
+            "comment-count": 0
         },
         {
             "id": "aa55942d-2592-49df-8d4b-b75ab8377ae9",
@@ -148,7 +171,8 @@
                     "text": "Test",
                     "timestamp": "2023-05-02 12:33"
                 }
-            ]
+            ],
+            "comment-count": 1
         },
         {
             "id": "d5974914-5269-4bac-9619-32fd3451bf63",
@@ -157,7 +181,8 @@
             "author": "Anonymous",
             "timestamp": "2023-05-02 06:43",
             "tags": [],
-            "comments": []
+            "comments": [],
+            "comment-count": 0
         },
         {
             "id": "eb773fbb-47d0-430a-908b-a58283808a7b",
@@ -166,7 +191,8 @@
             "author": "Anonymous",
             "timestamp": "2023-05-02 06:43",
             "tags": [],
-            "comments": []
+            "comments": [],
+            "comment-count": 0
         },
         {
             "id": "eb235d8e-dd19-4ebf-974b-19a540e58162",
@@ -175,7 +201,8 @@
             "author": "Anonymous",
             "timestamp": "2023-05-02 06:42",
             "tags": [],
-            "comments": []
+            "comments": [],
+            "comment-count": 0
         },
         {
             "id": "643b1865-d74a-47a1-8210-6cc2161a2179",
@@ -184,7 +211,8 @@
             "author": "Anonymous",
             "timestamp": "2023-05-02 06:35",
             "tags": [],
-            "comments": []
+            "comments": [],
+            "comment-count": 0
         },
         {
             "id": "7efdb427-552b-43c7-bcbe-0f54cd682afb",
@@ -193,7 +221,8 @@
             "author": "jimmydin7",
             "timestamp": "2023-04-29 14:28",
             "tags": [],
-            "comments": []
+            "comments": [],
+            "comment-count": 0
         },
         {
             "id": "b58441e6-6796-42aa-9404-4c22128f66b1",
@@ -202,7 +231,8 @@
             "author": "jimmydin7",
             "timestamp": "2023-04-29 14:27",
             "tags": [],
-            "comments": []
+            "comments": [],
+            "comment-count": 0
         },
         {
             "id": "8969bf9b-6240-4f2e-9f35-83a8fbc87673",
@@ -211,7 +241,8 @@
             "author": "Nikolis32",
             "timestamp": "2023-04-28 19:47",
             "tags": [],
-            "comments": []
+            "comments": [],
+            "comment-count": 0
         },
         {
             "id": "18fd23ad-4b93-4752-9ef0-2bc95e1706e7",
@@ -220,7 +251,8 @@
             "author": "Anonymous",
             "timestamp": "2023-04-28 19:10",
             "tags": [],
-            "comments": []
+            "comments": [],
+            "comment-count": 0
         },
         {
             "id": "c94b875c-cf1e-4da7-b4f9-688d8f109e34",
@@ -229,7 +261,8 @@
             "author": "jimmydin7",
             "timestamp": "2023-04-28 16:10",
             "tags": [],
-            "comments": []
+            "comments": [],
+            "comment-count": 0
         },
         {
             "id": "b47e6237-850d-4f7a-a0c4-31fbc7aff7e9",
@@ -238,7 +271,8 @@
             "author": "Anonymous",
             "timestamp": "2023-04-28 16:08",
             "tags": [],
-            "comments": []
+            "comments": [],
+            "comment-count": 0
         },
         {
             "id": "586b3e96-05d4-494a-a2f5-1f9dac406921",
@@ -247,7 +281,8 @@
             "author": "Thbop",
             "timestamp": "2023-04-28 15:57",
             "tags": [],
-            "comments": []
+            "comments": [],
+            "comment-count": 0
         },
         {
             "id": "ab160571-c79c-42ad-86c9-a0885bc2914a",
@@ -256,7 +291,8 @@
             "author": "Anonymous",
             "timestamp": "2023-04-28 15:53",
             "tags": [],
-            "comments": []
+            "comments": [],
+            "comment-count": 0
         },
         {
             "id": "f78503bb-eb34-4595-9c6a-8f8bddeeec2b",
@@ -265,7 +301,8 @@
             "author": "jimmydin7",
             "timestamp": "2023-04-28 15:46",
             "tags": [],
-            "comments": []
+            "comments": [],
+            "comment-count": 0
         },
         {
             "id": "ec49a8cc-75d1-4252-8417-b6a85fcd1fb8",
@@ -274,7 +311,8 @@
             "author": "bEaNs",
             "timestamp": "2023-04-28 15:43",
             "tags": [],
-            "comments": []
+            "comments": [],
+            "comment-count": 0
         },
         {
             "id": "c15816c8-9304-40f8-b476-caad57e2c108",
@@ -283,7 +321,8 @@
             "author": "jimmydin7",
             "timestamp": "2023-04-28 15:43",
             "tags": [],
-            "comments": []
+            "comments": [],
+            "comment-count": 0
         }
     ]
 }
