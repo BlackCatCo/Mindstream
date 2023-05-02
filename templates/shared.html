@@ -127,6 +127,7 @@
           box-shadow: 2px 2px 2px #ddd;
           position: relative;
           overflow: hidden;
+          margin-bottom: 100px;
         }
 
         #home-btn:hover {
@@ -149,6 +150,68 @@
         .anonymous_false{
           color: #000000;
         }
+
+        .comment {
+          color: black;
+          background-color: rgb(214, 214, 214);
+          padding: 15px;
+          margin-top: 10px;
+          margin-bottom: 20px;
+          
+          
+          
+
+        }
+
+
+        .comment_title {
+          font-size: 24px;
+          margin-bottom: 10px;
+        }
+
+        .comment_description {
+          font-size: 18px;
+          margin-bottom: 10px;
+        }
+
+        .comment_timestamp {
+          font-size: 14px;
+          color: rgb(0, 0, 0);
+        }
+
+        .comment_author{
+          font-size: medium;
+          margin-top: 10px;
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .t_area {
+          width: 100%;
+          padding: 10px;
+          margin: 10px 0;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          resize: vertical;
+          font-size: 16px;
+          line-height: 1.5;
+          
+        }
+        .but-send {
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          padding: 20px;
+          cursor: pointer;
+          font-size: 16px;
+          transition: background-color 0.5s ease;
+        }
+        .but-send:hover {
+          background-color: #49664a;
+        }
     </style>
 </head>
 <body>
@@ -166,16 +229,18 @@
             <h1 class="post_author anonymous_false">Posted by {{post['author'] }}</h1> 
           {% endif %} 
         </div>
+        <div style="display: block; margin: 0 auto; margin-top: 20px; margin-bottom: 20px; width: 0; height: 0; border-left: 15px solid transparent; border-right: 15px solid transparent; border-top: 15px solid rgb(223, 223, 223);"></div>
+
         {% for comment in post['comments'] %}
-        <div class="post">
-          <b class="post_author anonymous_false">{{comment['author'] }}</b>
-          <p class="post_description">{{ comment['text'] }}</p>
-          <p class="post_timestamp">{{ comment['timestamp'] }}</p>
+        <div class="comment">
+          <b class="comment_author anonymous_false">{{comment['author'] }}</b>
+          <p class="comment_description">{{ comment['text'] }}</p>
+          <p class="comment_timestamp">{{ comment['timestamp'] }}</p>
         </div>
         {% endfor %}
         <form action="" method="POST">
-          <textarea name="comment" placeholder="Type your comment here..."></textarea>
-          <button type="submit">Send</button>
+          <textarea name="comment" placeholder="Type your comment here..." class="t_area" required></textarea>
+          <button type="submit" class="but-send">Send</button>
         </form>
     </div>
     <div class="btn-container">

@@ -59,6 +59,9 @@ def share(id):
             user = handler.user.get( request.cookies.get('key') )
             if user != None:
                 handler.posts.add_comment(id, comment_text, user['name'])
+                
+            else:
+                return redirect("/signup")
 
     return render_template("shared.html", post=post)
 
