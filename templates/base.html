@@ -66,7 +66,7 @@
         shareButtons.forEach(button => {
             button.addEventListener('click', () => {
                 const id = button.getAttribute('data-id');
-                const baseUrl = "localhost:5000"
+                const baseUrl = "https://mindstream.pythonanywhere.com"
                 const shareUrl = baseUrl + `/feed/share/${id}`;
                 navigator.clipboard.writeText(shareUrl)
                     .then(() => alert('Share link copied to clipboard!'))
