@@ -102,6 +102,17 @@ class Admin:
 
             else:
                 return render_template("404.html")
+    
+    def posts(self):
+        @self.app.route('/admin/post/<post_id>/remove')
+        def post_remove(post_id):
+            key = request.cookies.get('key')
+            if self.check_admin(key):
+                self.handler.posts.remove(post_id)
+                return redirect('/feed')
+
+            else:
+                return render_template("404.html")
             
 
     def run(self):
@@ -109,4 +120,5 @@ class Admin:
         self.dashboard()
         self.users()
         self.raw()
+        self.posts()
 

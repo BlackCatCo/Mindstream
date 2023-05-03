@@ -42,19 +42,26 @@
     </nav>
     <div class="posts_container">
         {% for post in posts %}
-        <div class="post">
-          <h2 class="post_title">{{ post['title'] }}</h2>
-          <p class="post_description">{{ post['description'] }}</p>
-          <p class="post_timestamp">{{ post['timestamp'] }}</p>
-          <button class="share_button" data-id="{{ post['id'] }}">Share</button>
-          <a href="feed/share/{{ post['id'] }}"><button class="comment_button">View Comments ({{ post['comment-count'] }})</button></a>
-          {% if post['author'] == "Anonymous" %}
-            <h1 class="post_author anonymous_false">Posted by {{post['author'] }}</h1>
-          {% else %}
-            <h1 class="post_author anonymous_false">Posted by {{post['author'] }}</h1>
-          {% endif %}
-          
-        </div>
+            <div class="post">
+                <h2 class="post_title">{{ post['title'] }}</h2>
+                <p class="post_description">{{ post['description'] }}</p>
+                <p class="post_timestamp">{{ post['timestamp'] }}</p>
+
+                <button class="share_button" data-id="{{ post['id'] }}">Share</button>
+                <a href="feed/share/{{ post['id'] }}"><button class="comment_button">View Comments ({{ post['comment-count'] }})</button></a>
+                <!-- <a href="feed/share/{{ post['id'] }}" class="button">View Comments ({{ post['comment-count'] }})</a> -->
+
+                {% if user != None and user['permission-level'] > 0 %}
+                    <a class="button" href="admin/post/{{ post['id'] }}/remove">Delete</a>
+                {% endif %}
+
+                {% if post['author'] == "Anonymous" %}
+                    <h1 class="post_author anonymous_false">Posted by {{post['author'] }}</h1>
+                {% else %}
+                    <h1 class="post_author anonymous_false">Posted by {{post['author'] }}</h1>
+                {% endif %}
+            
+            </div>
         {% endfor %}
     </div>
     <div class="discord-button">
@@ -74,6 +81,7 @@
                     .catch(() => alert('Error copying share link to clipboard.'));
             });
         });
+
     </script>
 </body>
 </html>

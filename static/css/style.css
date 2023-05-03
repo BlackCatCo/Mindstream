@@ -249,3 +249,26 @@ scrollbar-thumb {
 .user-show:hover {
   transform: scale(1.2);
 }
+
+.button {
+  text-decoration: none;
+  color: #888;
+  background-color: #eee;
+
+
+  border-color: #989898;
+  border-style: solid;
+  border-radius: 4px;
+  border-width: 1px;
+  padding: 2px;
+  padding-top: .1px;
+  padding-bottom: 1px;
+
+  transition: padding 200ms;
+}
+
+.button:hover {
+  padding: 3.5px;
+  padding-top: .1px;
+  padding-bottom: 1px;
+}

@@ -61,6 +61,7 @@ def share(id):
             user = handler.user.get( request.cookies.get('key') )
             if user != None:
                 handler.posts.add_comment(id, comment_text, user['name'])
+                return redirect(f"/feed/share/{id}", code=303)
                 
             else:
                 return redirect("/signup")
