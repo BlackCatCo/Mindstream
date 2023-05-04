@@ -272,3 +272,51 @@ scrollbar-thumb {
   padding-top: .1px;
   padding-bottom: 1px;
 }
+
+
+
+
+
+
+
+
+
+
+
+/*Profile CSS*/
+
+.profile-container {
+  width: 400px;
+  margin: 100px auto;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-header {
+  margin-bottom: 20px;
+}
+
+.profile-username {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.profile-handle {
+  color: #777;
+}
+
+.detail {
+  margin-bottom: 10px;
+}
+
+.detail-label {
+  color: #333;
+  font-weight: bold;
+}
+
+.detail-value {
+  color: #555;
+}
