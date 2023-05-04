@@ -124,6 +124,11 @@ def logout():
     res.set_cookie('key', '', max_age=0)
     return res
 
+
+@app.route("/profile")
+def profile():
+    return render_template("profile.html", user=handler.user.get(request.cookies.get('key')))
+
 @app.errorhandler(404)
 def not_found(e):
     return render_template("404.html")
