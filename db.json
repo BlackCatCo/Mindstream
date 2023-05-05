@@ -5,6 +5,9 @@
             "name": "jimmydin7",
             "password": "whynotdimitris",
             "tags": [],
+            "followers": [],
+            "following": [],
+            "first-joined": "Alpha",
             "permission-level": 1
         },
         {
@@ -12,13 +15,19 @@
             "name": "bEaNs",
             "password": "Hindbrain2010",
             "tags": "[]",
+            "followers": [],
+            "following": [],
+            "first-joined": "Alpha",
             "permission-level": 1
         },
         {
-            "key": "4b75f8f181e7c81629de2e96afa8c169afa0b4ebc4b1aeec7052bc06ff87f1b7",
+            "key": "1d74970f0335049b2b715b9f12d22088c26b73f6eb975c9b835230dd389c298e",
             "name": "Thbop",
             "password": "34hNpC6qjE5TaZN",
             "tags": "[]",
+            "followers": [],
+            "following": [],
+            "first-joined": "Alpha",
             "permission-level": 1
         },
         {
@@ -26,6 +35,9 @@
             "name": "Nikolis32",
             "password": "DailyShopOfficial",
             "tags": [],
+            "followers": [],
+            "following": [],
+            "first-joined": "Alpha",
             "permission-level": 0
         },
         {
@@ -33,6 +45,9 @@
             "name": "HliasG",
             "password": "Niggas1234",
             "tags": [],
+            "followers": [],
+            "following": [],
+            "first-joined": "Alpha",
             "permission-level": 0
         },
         {
@@ -40,185 +55,13 @@
             "name": "Ghost",
             "password": "PJwxBFq4ZXhaK6Z",
             "tags": [],
+            "followers": [],
+            "following": [],
+            "first-joined": "Alpha",
             "permission-level": 0
         }
     ],
     "posts": [
-        {
-            "id": "a72764d5-8bf0-410f-8dac-7fa293e1a3b8",
-            "title": "Beef 2",
-            "description": "adf",
-            "author": "Thbop",
-            "timestamp": "2023-05-02 21:32",
-            "tags": [],
-            "comments": [],
-            "comment-count": 0
-        },
-        {
-            "id": "56b8f726-0da5-463b-abbb-8ecd8993e7b3",
-            "title": "Test",
-            "description": "test test",
-            "author": "Thbop",
-            "timestamp": "2023-05-02 21:30",
-            "tags": [],
-            "comments": [
-                {
-                    "id": "84b30042-0315-436c-b91a-fad97da13212",
-                    "author": "Thbop",
-                    "text": "adfasdf",
-                    "timestamp": "2023-05-02 21:31"
-                },
-                {
-                    "id": "bb11150f-d857-45de-adb7-8f4cf676a6b2",
-                    "author": "Thbop",
-                    "text": "asdf",
-                    "timestamp": "2023-05-02 21:31"
-                },
-                {
-                    "id": "54f2108c-5317-45ec-9d80-69792243c6b2",
-                    "author": "Thbop",
-                    "text": "test",
-                    "timestamp": "2023-05-02 21:30"
-                },
-                {
-                    "id": "b33f6577-1ac2-4313-95b6-dbda3a21b790",
-                    "author": "Thbop",
-                    "text": "test",
-                    "timestamp": "2023-05-02 21:30"
-                }
-            ],
-            "comment-count": 4
-        },
-        {
-            "id": "04494584-f4ad-4945-a7a4-f9e456fd46b6",
-            "title": "Hello world",
-            "description": "asdfasdf",
-            "author": "Thbop",
-            "timestamp": "2023-05-02 12:34",
-            "tags": [],
-            "comments": [],
-            "comment-count": 0
-        },
-        {
-            "id": "969fbd03-d54e-4403-b205-6fb9c0fb66b4",
-            "title": "tes ",
-            "description": "2321",
-            "author": "Ghost",
-            "timestamp": "2023-05-02 12:33",
-            "tags": [],
-            "comments": [],
-            "comment-count": 0
-        },
-        {
-            "id": "1e1a7a02-acf3-4816-9887-adfac667a90b",
-            "title": "35435",
-            "description": "3453453463",
-            "author": "Ghost",
-            "timestamp": "2023-05-02 10:27",
-            "tags": [],
-            "comments": [],
-            "comment-count": 0
-        },
-        {
-            "id": "69d63fe4-fa35-41cd-8bde-a97cc07a32b5",
-            "title": "45",
-            "description": "3636",
-            "author": "Ghost",
-            "timestamp": "2023-05-02 10:26",
-            "tags": [],
-            "comments": [],
-            "comment-count": 0
-        },
-        {
-            "id": "268c0c54-1bd1-46bc-b396-39d3d1f6e0cb",
-            "title": "adfadsf",
-            "description": "asdfasdfas dfasdf2.0",
-            "author": "Ghost",
-            "timestamp": "2023-05-02 10:26",
-            "tags": [],
-            "comments": [],
-            "comment-count": 0
-        },
-        {
-            "id": "f488213c-e422-42dc-af07-10fdf280a469",
-            "title": "asdf",
-            "description": "adsfasdf",
-            "author": "Ghost",
-            "timestamp": "2023-05-02 10:24",
-            "tags": [],
-            "comments": [],
-            "comment-count": 0
-        },
-        {
-            "id": "df87e50b-f4ef-4335-8d80-d13db8c8f31b",
-            "title": "f",
-            "description": "asdfadf",
-            "author": "Ghost",
-            "timestamp": "2023-05-02 10:23",
-            "tags": [],
-            "comments": [],
-            "comment-count": 0
-        },
-        {
-            "id": "5e14af16-03bc-4b5c-a53f-cb8e26603b91",
-            "title": "test",
-            "description": " test ets e",
-            "author": "Ghost",
-            "timestamp": "2023-05-02 10:22",
-            "tags": [],
-            "comments": [],
-            "comment-count": 0
-        },
-        {
-            "id": "7e44cb62-1ee8-4348-a16e-0785d094b0da",
-            "title": "Hello",
-            "description": "Hello there",
-            "author": "Ghost",
-            "timestamp": "2023-05-02 14:16",
-            "tags": [],
-            "comments": [
-                {
-                    "id": "3d787200-1a2a-4b2c-ab9f-bd9bfd71b3f2",
-                    "author": "Thbop",
-                    "text": "Cheese 2",
-                    "timestamp": "2023-05-02 12:42"
-                },
-                {
-                    "id": "7a4e57e7-810d-412e-8640-184989121ea2",
-                    "author": "Thbop",
-                    "text": "Cheese",
-                    "timestamp": "2023-05-02 12:42"
-                }
-            ],
-            "comment-count": 2
-        },
-        {
-            "id": "b5ee1f20-8ddf-483b-ad3d-971241d60e34",
-            "title": "Hello",
-            "description": "Hello",
-            "author": "Ghost",
-            "timestamp": "2023-05-02 14:12",
-            "tags": [],
-            "comments": [],
-            "comment-count": 0
-        },
-        {
-            "id": "aa55942d-2592-49df-8d4b-b75ab8377ae9",
-            "title": "Hey peoples, it's raytracing time!",
-            "description": "You like raytracing, well of course you do, who doesn't?\r\nAt this time I'm following Peter Shirley's amazing raytracing tutorial in.... Python.\r\n\r\nIssue is, Python's very slow for raytracing, yet I'm still chugging along, just a little slower than our C++ friends.\r\n\r\nCheck out my progress on our discord in the #other channel\r\n\r\nCheck out Shirley's books here: https://raytracing.github.io/",
-            "author": "Thbop",
-            "timestamp": "2023-05-02 13:19",
-            "tags": [],
-            "comments": [
-                {
-                    "id": "ecebb2cf-ddb2-4a90-b2d8-9e598d810008",
-                    "author": "Ghost",
-                    "text": "Test",
-                    "timestamp": "2023-05-02 12:33"
-                }
-            ],
-            "comment-count": 1
-        },
         {
             "id": "d5974914-5269-4bac-9619-32fd3451bf63",
             "title": "Answer to AI",
@@ -227,6 +70,7 @@
             "timestamp": "2023-05-02 06:43",
             "tags": [],
             "comments": [],
+            "likes": 0,
             "comment-count": 0
         },
         {
@@ -237,6 +81,7 @@
             "timestamp": "2023-05-02 06:43",
             "tags": [],
             "comments": [],
+            "likes": 0,
             "comment-count": 0
         },
         {
@@ -247,6 +92,7 @@
             "timestamp": "2023-05-02 06:42",
             "tags": [],
             "comments": [],
+            "likes": 0,
             "comment-count": 0
         },
         {
@@ -257,6 +103,7 @@
             "timestamp": "2023-05-02 06:35",
             "tags": [],
             "comments": [],
+            "likes": 0,
             "comment-count": 0
         },
         {
@@ -267,6 +114,7 @@
             "timestamp": "2023-04-29 14:28",
             "tags": [],
             "comments": [],
+            "likes": 0,
             "comment-count": 0
         },
         {
@@ -277,6 +125,7 @@
             "timestamp": "2023-04-29 14:27",
             "tags": [],
             "comments": [],
+            "likes": 0,
             "comment-count": 0
         },
         {
@@ -287,6 +136,7 @@
             "timestamp": "2023-04-28 19:47",
             "tags": [],
             "comments": [],
+            "likes": 0,
             "comment-count": 0
         },
         {
@@ -297,6 +147,7 @@
             "timestamp": "2023-04-28 19:10",
             "tags": [],
             "comments": [],
+            "likes": 0,
             "comment-count": 0
         },
         {
@@ -307,6 +158,7 @@
             "timestamp": "2023-04-28 16:10",
             "tags": [],
             "comments": [],
+            "likes": 0,
             "comment-count": 0
         },
         {
@@ -317,6 +169,7 @@
             "timestamp": "2023-04-28 16:08",
             "tags": [],
             "comments": [],
+            "likes": 0,
             "comment-count": 0
         },
         {
@@ -327,6 +180,7 @@
             "timestamp": "2023-04-28 15:57",
             "tags": [],
             "comments": [],
+            "likes": 0,
             "comment-count": 0
         },
         {
@@ -337,6 +191,7 @@
             "timestamp": "2023-04-28 15:53",
             "tags": [],
             "comments": [],
+            "likes": 0,
             "comment-count": 0
         },
         {
@@ -347,6 +202,7 @@
             "timestamp": "2023-04-28 15:46",
             "tags": [],
             "comments": [],
+            "likes": 0,
             "comment-count": 0
         },
         {
@@ -357,6 +213,7 @@
             "timestamp": "2023-04-28 15:43",
             "tags": [],
             "comments": [],
+            "likes": 0,
             "comment-count": 0
         },
         {
@@ -367,6 +224,7 @@
             "timestamp": "2023-04-28 15:43",
             "tags": [],
             "comments": [],
+            "likes": 0,
             "comment-count": 0
         }
     ]

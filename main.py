@@ -46,7 +46,7 @@ def feed():
     posts_sorted = sorted(posts, key=itemgetter("timestamp"), reverse=True)
     for p in posts_sorted:
         p['comment-count'] = len(p['comments'])
-    return render_template("base.html", posts=posts_sorted, user=handler.user.get( request.cookies.get('key') ))
+    return render_template("feed.html", posts=posts_sorted, user=handler.user.get( request.cookies.get('key') ))
 
 
 @app.route("/feed/share/<id>", methods=['GET', 'POST'])
@@ -83,14 +83,14 @@ def signup():
             else:
                 error = 'That username is already in use!'
         
-        res = make_response(render_template("signup.html", error=error))
+        res = make_response(render_template("user/signup.html", error=error))
         if key != None:
             res = make_response(redirect('/feed'))
             res.set_cookie('key', key, max_age=63072000) # Sets a cookie with the key for 2 years
 
         return res
     else:
-        return render_template("signup.html", error=None)
+        return render_template("user/signup.html", error=None)
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
@@ -109,14 +109,14 @@ def login():
             else:
                 error = 'Authentication failed! Wrong username or password.'
         
-        res = make_response(render_template("login.html", error=error))
+        res = make_response(render_template("user/login.html", error=error))
         if key != None:
             res = make_response(redirect('/feed'))
             res.set_cookie('key', key, max_age=63072000) # Sets a cookie with the key for 2 years
 
         return res
     else:
-        return render_template("login.html", error=None)
+        return render_template("user/login.html", error=None)
 
 @app.route("/logout")
 def logout():
@@ -127,7 +127,25 @@ def logout():
 
 @app.route("/profile")
 def profile():
-    return render_template("profile.html", user=handler.user.get(request.cookies.get('key')))
+    user = handler.user.get(request.cookies.get('key'))
+    if user == None:
+        return redirect('/signup')
+    else:
+        return redirect(f'/profile/{user["name"]}')
+
+@app.route("/profile/<username>")
+def profile_u(username):
+    user = handler.user.get(request.cookies.get('key'))
+
+    puser = handler.user.get_name(username)
+    
+    if puser == None:
+        return render_template("404.html")
+    else:
+        info = handler.user.get_profile(puser['key'])
+        return render_template('user/profile.html', user=user, info=info)
+
+
 
 @app.errorhandler(404)
 def not_found(e):

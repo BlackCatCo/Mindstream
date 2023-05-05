@@ -1,4 +1,5 @@
 import secrets
+import datetime
 
 class User:
     def __init__(self, db):
@@ -8,9 +9,15 @@ class User:
             'name':None,
             'password':None,
             'tags': [],
+            'followers': [],
+            'following': [],
+            'first-joined': 'Alpha',
             'permission-level':0
         }
         self.db = db
+    
+    def _timestamp(self):
+        return datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
 
     def get(self, key):
         '''Get's a user's data using their key.'''
@@ -42,11 +49,16 @@ class User:
         coast is clear: add user and save to database.
         '''
         if self.get_name(name) == None:
-            user = self.default_user.copy()
-
-            user['key'] = secrets.token_hex()
-            user['name'] = name
-            user['password'] = password
+            user = {
+                'key':secrets.token_hex(),
+                'name':name,
+                'password':password,
+                'tags': [],
+                'followers': [],
+                'following': [],
+                'first-joined': self._timestamp(),
+                'permission-level':0
+            }
 
             self.db.data['users'].append(user)
             self.db.save()
@@ -127,3 +139,23 @@ class User:
         elif name == password:
             error = 'Usernames cannot equal passwords!'
         return error
+    
+    def get_profile(self, key):
+        user = self.get(key)
+        
+        posts = 0
+        comments = 0
+        for p in self.db.data['posts']:
+            if p['author'] == user['name']:
+                posts += 1
+                comments += len( p['comments'] )
+
+        info = {
+            'name': user['name'],
+            'mention': '@' + user['name'],
+            'followers': len( user['followers'] ),
+            'first-joined': user['first-joined'],
+            'posts': posts,
+            'comments': comments
+        }
+        return info

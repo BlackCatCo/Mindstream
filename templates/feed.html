@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block nav %}
+    <form action="/feed" method="POST" class="post_form">
+        <input type="text" name="title" placeholder="Title" required>
+        <textarea name="description" placeholder="What's on your mind?" required></textarea>
+        <button type="submit">Post</button>
+    </form>
+{% endblock %}
+
+{% block body %}
+    </nav>
+    <div class="posts_container">
+        {% for post in posts %}
+            <div class="post">
+                <h2 class="post_title">{{ post['title'] }}</h2>
+                <p class="post_description">{{ post['description'] }}</p>
+                <p class="post_timestamp">{{ post['timestamp'] }}</p>
+
+                <button class="share_button" data-id="{{ post['id'] }}">Share</button>
+                <a href="feed/share/{{ post['id'] }}"><button class="comment_button">View Comments ({{ post['comment-count'] }})</button></a>
+                <!-- <a href="feed/share/{{ post['id'] }}" class="button">View Comments ({{ post['comment-count'] }})</a> -->
+
+                {% if user != None and user['permission-level'] > 0 %}
+                    <a class="button" href="admin/post/{{ post['id'] }}/remove">Delete</a>
+                {% endif %}
+
+                {% if post['author'] == "Anonymous" %}
+                    <h1 class="post_author anonymous_false">Posted by {{post['author'] }}</h1>
+                {% else %}
+                    <h1 class="post_author anonymous_false">Posted by {{post['author'] }}</h1>
+                {% endif %}
+            
+            </div>
+        {% endfor %}
+    </div>
+
+    <script>
+        const shareButtons = document.querySelectorAll('.share_button');
+        shareButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const id = button.getAttribute('data-id');
+                const baseUrl = "localhost:5000"
+                const shareUrl = baseUrl + `/feed/share/${id}`;
+                navigator.clipboard.writeText(shareUrl)
+                    .then(() => alert('Share link copied to clipboard!'))
+                    .catch(() => alert('Error copying share link to clipboard.'));
+            });
+        });
+
+    </script>
+{% endblock %}

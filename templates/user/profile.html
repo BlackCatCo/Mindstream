@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <div class="profile-container">
+        <div class="profile-header">
+            <h1 class="profile-username">{{ info['name'] }}</h1>
+            <p class="profile-handle">@{{ info['name'].lower() }}</p>
+        </div>
+        <div class="profile-details">
+            <div class="detail">
+                <p class="detail-label">Followers:</p>
+                <p class="detail-value">{{ info['followers'] }} followers</p>
+            </div>
+            <div class="detail">
+                <p class="detail-label">Joined Mindstream on:</p>
+                <p class="detail-value">{{ info['first-joined'] }}</p>
+            </div>
+            <div class="detail">
+                <p class="detail-label">Posts:</p>
+                {% if info['posts'] == 0 or info['posts'] > 1 %}
+                    <p class="detail-value">{{ info['posts'] }} posts</p>
+                {% else %}
+                    <p class="detail-value">1 post</p>
+                {% endif %}
+            </div>
+            <div class="detail">
+                <p class="detail-label">Comments Gained:</p>
+                {% if info['comments'] == 0 or info['comments'] > 1 %}
+                    <p class="detail-value">{{ info['comments'] }} comments</p>
+                {% else %}
+                    <p class="detail-value">1 comment</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

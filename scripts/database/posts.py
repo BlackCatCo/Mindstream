@@ -12,7 +12,8 @@ class Posts:
             "author": None,
             "timestamp": None,
             "tags": [],
-            "comments": []
+            "comments": [],
+            "likes": 0,
         }
 
         self.default_comment = {
@@ -29,13 +30,16 @@ class Posts:
         return self.db.data['posts']
     
     def add(self, title, description, author):
-
-        post = self.default_post.copy()
-        post['id'] = str(uuid.uuid4())
-        post['title'] = title
-        post['description'] = description
-        post['author'] = author
-        post['timestamp'] = self._timestamp()
+        post = {
+            "id": str(uuid.uuid4()),
+            "title": title,
+            "description": description,
+            "author": author,
+            "timestamp": self._timestamp(),
+            "tags": [],
+            "comments": [],
+            "likes": 0,
+        }
 
         posts = self.get_all()
         posts.insert(0, post)
@@ -49,6 +53,8 @@ class Posts:
             if p['id'] == id:
                 posts.remove(p)
                 out = True
+        if out:
+            self.db.save()
         return out
     
     def get(self, id):
@@ -61,11 +67,12 @@ class Posts:
     def add_comment(self, post_id, comment_text, author):
         post = self.get(post_id)
         if post != None:
-            comment = self.default_comment.copy()
-            comment['id'] = str(uuid.uuid4())
-            comment['author'] = author
-            comment['text'] = comment_text
-            comment['timestamp'] = self._timestamp()
+            comment = {
+                'id': str(uuid.uuid4()),
+                'author': author,
+                'text': comment_text,
+                'timestamp': self._timestamp()
+                }
 
             post['comments'].insert(0, comment)
             self.db.save()
