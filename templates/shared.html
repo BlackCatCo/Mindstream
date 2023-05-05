@@ -257,7 +257,9 @@
 
         {% for comment in post['comments'] %}
         <div class="comment">
-            <b class="comment_author anonymous_false">{{comment['author'] }}</b>
+
+            <a href="/profile/{{comment['author'] }}" class="mention post_author anonymous_false">@{{comment['author'] }}</a>
+
             <p class="comment_description">{{ comment['text'] }}</p>
             <p class="comment_timestamp">{{ comment['timestamp'] }}</p>
         </div>

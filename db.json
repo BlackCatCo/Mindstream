@@ -69,9 +69,22 @@
             "author": "Anonymous",
             "timestamp": "2023-05-02 06:43",
             "tags": [],
-            "comments": [],
+            "comments": [
+                {
+                    "id": "d0ea7983-4e6e-4b68-a6f8-36674793703b",
+                    "author": "Thbop",
+                    "text": "test",
+                    "timestamp": "2023-05-05 09:13"
+                },
+                {
+                    "id": "f2610d08-64b3-49cc-9c77-f95d4993b73f",
+                    "author": "Thbop",
+                    "text": "Test",
+                    "timestamp": "2023-05-05 09:11"
+                }
+            ],
             "likes": 0,
-            "comment-count": 0
+            "comment-count": 1
         },
         {
             "id": "eb773fbb-47d0-430a-908b-a58283808a7b",
