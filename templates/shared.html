@@ -218,6 +218,19 @@
         .but-send:hover {
             background-color: #49664a;
         }
+
+        .mention {
+            color:#3d7fd4;
+            background: none;
+
+            text-decoration: none;
+            border-radius: 5px;
+
+            transition: background .2s;
+        }
+        .mention:hover {
+            background: #dfeeff;
+        }
     </style>
 </head>
 
@@ -233,7 +246,9 @@
             {% if post['author'] == "Anonymous" %}
             <h1 class="post_author anonymous_false">Posted by {{post['author'] }}</h1>
             {% else %}
-            <h1 class="post_author anonymous_false">Posted by {{post['author'] }}</h1>
+            <h1 class="post_author anonymous_false">Posted by
+                <a href="/profile/{{post['author'] }}" class="mention">@{{post['author'] }}</a>
+            </h1>
             {% endif %}
         </div>
         <div
