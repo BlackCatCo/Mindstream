@@ -3,7 +3,10 @@
 {% block body %}
     <div class="profile-container">
         <div class="profile-header">
-            <h1 class="profile-username">{{ info['name'] }}</h1>
+            <div class="name-container">
+                <h1 class="profile-username">{{ info['name'] }}</h1>
+                <i class="fas fa-check-circle text-blue fa-2x"></i>
+            </div>
             <a href="" class="profile-handle mention">@{{ info['name'] }}</a>
         </div>
         <div class="profile-details">
