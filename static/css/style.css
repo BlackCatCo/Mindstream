@@ -320,3 +320,16 @@ scrollbar-thumb {
 .detail-value {
   color: #555;
 }
+
+.mention {
+  color:#3d7fd4;
+  background: none;
+
+  text-decoration: none;
+  border-radius: 5px;
+
+  transition: background .2s;
+}
+.mention:hover {
+  background: #dfeeff;
+}

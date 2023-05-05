@@ -4,12 +4,16 @@
     <div class="profile-container">
         <div class="profile-header">
             <h1 class="profile-username">{{ info['name'] }}</h1>
-            <p class="profile-handle">@{{ info['name'].lower() }}</p>
+            <a href="" class="profile-handle mention">@{{ info['name'] }}</a>
         </div>
         <div class="profile-details">
             <div class="detail">
                 <p class="detail-label">Followers:</p>
-                <p class="detail-value">{{ info['followers'] }} followers</p>
+                {% if info['followers'] == 0 or info['followers'] > 1 %}
+                    <p class="detail-value">{{ info['followers'] }} followers</p>
+                {% else %}
+                    <p class="detail-value">1 follower</p>
+                {% endif %}
             </div>
             <div class="detail">
                 <p class="detail-label">Joined Mindstream on:</p>

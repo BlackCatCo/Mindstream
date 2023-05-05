@@ -28,7 +28,9 @@
                 {% if post['author'] == "Anonymous" %}
                     <h1 class="post_author anonymous_false">Posted by {{post['author'] }}</h1>
                 {% else %}
-                    <h1 class="post_author anonymous_false">Posted by {{post['author'] }}</h1>
+                    <h1 class="post_author anonymous_false">Posted by
+                        <a href="/profile/{{post['author'] }}" class="mention">@{{post['author'] }}</a>
+                    </h1>
                 {% endif %}
             
             </div>
