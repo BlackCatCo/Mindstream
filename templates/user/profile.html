@@ -6,7 +6,7 @@
         <div class="profile-header">
             <div class="name-container">
                  <h1 class="profile-username">{{ info['name'] }}</h1>
-                {% if info['verified'] == 'true' %}
+                {% if info['verified'] %}
                    <i class="fas fa-check-circle text-blue fa-2x"></i>
                 {% else %}
                     <a style="display: none;"></a>

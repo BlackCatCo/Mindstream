@@ -45,15 +45,27 @@ def feed():
     
     posts_sorted = sorted(posts, key=itemgetter("timestamp"), reverse=True)
     for p in posts_sorted:
+        p_author = handler.user.get_name(p['author'])
+        p['verified'] = p_author['verified']
         p['comment-count'] = len(p['comments'])
     return render_template("feed.html", posts=posts_sorted, user=handler.user.get( request.cookies.get('key') ))
 
 
 @app.route("/feed/share/<id>", methods=['GET', 'POST'])
 def share(id):
-    post = next((p for p in posts if p["id"] == id), None)
+    post = next((p for p in posts if p["id"] == id), None).copy()
     if not post:
         return "Post not found"
+    
+    if post['author'] != 'Anonymous':
+        author = handler.user.get_name(post['author'])
+        post['verified'] = author['verified']
+
+    else: post['verified'] = 0
+
+    for c in post['comments']:
+        c_author = handler.user.get_name(c['author'])
+        c['verified'] = c_author['verified']
     
     if request.method == "POST":
         comment_text = request.form.get('comment')

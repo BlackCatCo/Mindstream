@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <title>Mindstream - Share</title>
     <style>
         * {
@@ -248,6 +249,11 @@
             {% else %}
             <h1 class="post_author anonymous_false">Posted by
                 <a href="/profile/{{post['author'] }}" class="mention">@{{post['author'] }}</a>
+                {% if post['verified'] %}
+                   <i class="fas fa-check-circle text-blue fa-1x"></i>
+                {% else %}
+                    <a style="display: none;"></a>
+                {% endif %}
             </h1>
             {% endif %}
         </div>
@@ -259,6 +265,11 @@
         <div class="comment">
 
             <a href="/profile/{{comment['author'] }}" class="mention post_author anonymous_false">@{{comment['author'] }}</a>
+            {% if comment['verified'] %}
+                   <i class="fas fa-check-circle text-blue fa-1x"></i>
+                {% else %}
+                    <a style="display: none;"></a>
+                {% endif %}
 
             <p class="comment_description">{{ comment['text'] }}</p>
             <p class="comment_timestamp">{{ comment['timestamp'] }}</p>

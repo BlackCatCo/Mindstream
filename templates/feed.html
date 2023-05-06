@@ -30,6 +30,11 @@
                 {% else %}
                     <h1 class="post_author anonymous_false">Posted by
                         <a href="/profile/{{post['author'] }}" class="mention">@{{post['author'] }}</a>
+                        {% if post['verified'] %}
+                            <i class="fas fa-check-circle text-blue fa-1x"></i>
+                        {% else %}
+                            <a style="display: none;"></a>
+                        {% endif %}
                     </h1>
                 {% endif %}
             

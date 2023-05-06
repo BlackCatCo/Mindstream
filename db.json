@@ -1,34 +1,37 @@
 {
     "users": [
         {
-            "key": "53bb5035b991276a4b049fd0218724d8ee1265bd05bae554d68d0689941eada3",
+            "key": "12cddc8599cb02b6537fb4e6f412e8a2eb8bc68501192d652df823025524d92d",
             "name": "jimmydin7",
             "password": "whynotdimitris",
             "tags": [],
             "followers": [],
             "following": [],
             "first-joined": "Alpha",
-            "permission-level": 1
+            "permission-level": 1,
+            "verified": 0
         },
         {
-            "key": "3b016aea00870cb5eccdf18c4049a17995a1bcd3c3968bf2b9582dcd761c67bc",
+            "key": "2679968ae3b99800599d9335572261936ce9fee3ee996ffe1477050bdf9eb151",
             "name": "bEaNs",
             "password": "Hindbrain2010",
             "tags": "[]",
             "followers": [],
             "following": [],
             "first-joined": "Alpha",
-            "permission-level": 1
+            "permission-level": 1,
+            "verified": 0
         },
         {
-            "key": "d8274e1ee9bc58cb1d04d647da5e404c64095e908e9b9b12a29cdbc93a33e21e",
+            "key": "d7bca462c46a957016e9abcfbea295c88d2e4aecdcdbed1b8c423693a64fb2d0",
             "name": "Thbop",
             "password": "34hNpC6qjE5TaZN",
             "tags": "[]",
-            "followers": [],
-            "following": [],
+            "followers": "[]",
+            "following": "[]",
             "first-joined": "Alpha",
-            "permission-level": 1
+            "permission-level": 1,
+            "verified": 1
         },
         {
             "key": "a4272b0bb557d9caa06871a11bf98fcca76583b3f020dd44a2c917ced296f3ae",
@@ -38,7 +41,8 @@
             "followers": [],
             "following": [],
             "first-joined": "Alpha",
-            "permission-level": 0
+            "permission-level": 0,
+            "verified": 0
         },
         {
             "key": "089c7557a983ecb7512c81892268ae1fc8c86c159c1df40038126e1f641897fa",
@@ -48,109 +52,789 @@
             "followers": [],
             "following": [],
             "first-joined": "Alpha",
-            "permission-level": 0
+            "permission-level": 0,
+            "verified": 0
         },
         {
-            "key": "0e1d89a66d9240176764787fffed1e4657a333f66ef086d852e0dacb403fcf0b",
+            "key": "1c4a739303da1bb194a8d67554eb0b54b0d54de9cbc96e662866022c93e3eeb2",
             "name": "Ghost",
             "password": "PJwxBFq4ZXhaK6Z",
             "tags": [],
             "followers": [],
             "following": [],
             "first-joined": "Alpha",
-            "permission-level": 0
+            "permission-level": 0,
+            "verified": 0
+        },
+        {
+            "key": "0169da67b9f78063ae6793d8591e654d979c50a613aa0398c41f1d1db929f9a5",
+            "name": "dimitris_school",
+            "password": "random12345",
+            "tags": [],
+            "followers": [],
+            "following": [],
+            "first-joined": "Alpha",
+            "permission-level": 0,
+            "verified": 0
+        },
+        {
+            "key": "3c9d8a6fdaf20fac5b23f25da5eac48808c9fc84296c0ec11714cdfaa8203c7b",
+            "name": "gaga",
+            "password": "leleellele",
+            "tags": [],
+            "followers": [],
+            "following": [],
+            "first-joined": "Alpha",
+            "permission-level": 0,
+            "verified": 0
+        },
+        {
+            "key": "00dd86884f494addf2c159b0be0d025c775f64e7c652305bbb8c575117132eff",
+            "name": "test123",
+            "password": "312fsdfsd",
+            "tags": [],
+            "followers": [],
+            "following": [],
+            "first-joined": "Alpha",
+            "permission-level": 0,
+            "verified": 0
+        },
+        {
+            "key": "66b25416b2ff560f6ff07fd962cc459be723585272fc1c26c4ec2f77f45a4635",
+            "name": "str8",
+            "password": "dasdsadsa",
+            "tags": [],
+            "followers": [],
+            "following": [],
+            "first-joined": "Alpha",
+            "permission-level": 0,
+            "verified": 0
+        },
+        {
+            "key": "26cc247e1da2ee6a372395dfa70b232c15eab44010c82486bf10c1a952b1ce1a",
+            "name": "Cheese",
+            "password": "iBR678WLibdguuj",
+            "tags": [],
+            "followers": [],
+            "following": [],
+            "first-joined": "2023-05-05 04:15",
+            "permission-level": 0,
+            "verified": 0
+        },
+        {
+            "key": "f101d3d551c077ebee7d1b02c44dc2ae406ebcb15c9eb3f1e7263fc61ef1e7d6",
+            "name": "Thethingbegind",
+            "password": "hahahahaha",
+            "tags": [],
+            "followers": [],
+            "following": [],
+            "first-joined": "2023-05-05 05:01",
+            "permission-level": 0,
+            "verified": 0
+        },
+        {
+            "key": "23cf5caa68f3c9c48e70cbe11b16239c2dc1f2a1030c6a65565fb39e14615770",
+            "name": "WildAbbee",
+            "password": "wildabbee",
+            "tags": [],
+            "followers": [],
+            "following": [],
+            "first-joined": "2023-05-05 11:27",
+            "permission-level": 0,
+            "verified": 0
+        },
+        {
+            "key": "8c5db233b670ad01dbc357d9dbcead3ad93e682191c360fda61dc987f7b1d87b",
+            "name": "Anonymous",
+            "password": "SCdRqyUnr8eAF4N",
+            "tags": [],
+            "followers": [],
+            "following": [],
+            "first-joined": "2023-05-05 15:07",
+            "permission-level": 0,
+            "verified": 0
+        },
+        {
+            "key": "0b500b8ed94061ae1cd94fc10c2ea06c6879a42aa56438896e5ab76eacc189f4",
+            "name": "Nebula",
+            "password": "Compton6",
+            "tags": [],
+            "followers": [],
+            "following": [],
+            "first-joined": "2023-05-05 15:40",
+            "permission-level": 0,
+            "verified": 0
+        },
+        {
+            "key": "990e3e60655abc834f05e810b0914ca39fe8c8eedcb61ab73274175bcf63800c",
+            "name": "Cringer2000",
+            "password": "Icringeatyou45",
+            "tags": [],
+            "followers": [],
+            "following": [],
+            "first-joined": "2023-05-05 16:24",
+            "permission-level": 0,
+            "verified": 0
+        },
+        {
+            "key": "d435b8f150d410ac9dcaa54e540a5d34e4f9e949af70b5fb9df1992361b449a8",
+            "name": "clinkclick8",
+            "password": "dimitris124",
+            "tags": [],
+            "followers": [],
+            "following": [],
+            "first-joined": "2023-05-05 16:26",
+            "permission-level": 0,
+            "verified": 0
+        },
+        {
+            "key": "c29a878df2edfa575c3471889c5d086ab9b6d3e299d7bba58d2f9f052fcae5e8",
+            "name": "BlueBoy3845",
+            "password": "38451283",
+            "tags": "[]",
+            "followers": "[]",
+            "following": "[]",
+            "first-joined": "2023-05-06 11:59",
+            "permission-level": 0,
+            "verified": 1
+        },
+        {
+            "key": "6ca527ae8450672a8a7c4cf7d456c29678294d50ec157f6ccea11d564ef8ad8c",
+            "name": "xJmd",
+            "password": "whynotdimitris",
+            "tags": [],
+            "followers": [],
+            "following": [],
+            "first-joined": "2023-05-06 14:10",
+            "permission-level": 0,
+            "verified": 0
         }
     ],
     "posts": [
         {
-            "id": "d5974914-5269-4bac-9619-32fd3451bf63",
-            "title": "Answer to AI",
-            "description": "What is artificial intelligence (AI)?\r\nArtificial intelligence is the simulation of human intelligence processes by machines, especially computer systems. Specific applications of AI include expert systems, natural language processing, speech recognition and machine vision.\r\n\r\nHow does AI work?\r\nAs the hype around AI has accelerated, vendors have been scrambling to promote how their products and services use it. Often, what they refer to as AI is simply a component of the technology, such as machine learning. AI requires a foundation of specialized hardware and software for writing and training machine learning algorithms. No single programming language is synonymous with AI, but Python, R, Java, C++ and Julia have features popular with AI developers.\r\n\r\nIn general, AI systems work by ingesting large amounts of labeled training data, analyzing the data for correlations and patterns, and using these patterns to make predictions about future states. In this way, a chatbot that is fed examples of text can learn to generate lifelike exchanges with people, or an image recognition tool can learn to identify and describe objects in images by reviewing millions of examples. New, rapidly improving generative AI techniques can create realistic text, images, music and other media.\r\n\r\n* Tottally not generated by AI",
-            "author": "Anonymous",
-            "timestamp": "2023-05-02 06:43",
+            "id": "ffa5bc76-c7cc-483e-945d-d7ebf315e1bd",
+            "title": "MCC Lover",
+            "description": "Does anyone here LOVE AND IS OBSSESED with MCC? Probably not but whatever....",
+            "author": "BlueBoy3845",
+            "timestamp": "2023-05-06 14:01",
             "tags": [],
             "comments": [
                 {
-                    "id": "d0ea7983-4e6e-4b68-a6f8-36674793703b",
-                    "author": "Thbop",
-                    "text": "test",
-                    "timestamp": "2023-05-05 09:13"
-                },
-                {
-                    "id": "f2610d08-64b3-49cc-9c77-f95d4993b73f",
+                    "id": "537b11c7-ff37-4946-82c1-b7c87c992755",
                     "author": "Thbop",
                     "text": "Test",
-                    "timestamp": "2023-05-05 09:11"
+                    "timestamp": "2023-05-06 10:42"
+                },
+                {
+                    "id": "48f8e0a4-7d08-4815-a962-8ede84a34692",
+                    "author": "Thbop",
+                    "text": "Test",
+                    "timestamp": "2023-05-06 10:32",
+                    "verified": 1
+                },
+                {
+                    "id": "dfb9784b-aa2a-4152-9561-5aa061c97874",
+                    "author": "BlueBoy3845",
+                    "text": "yup\r\n",
+                    "timestamp": "2023-05-06 14:12",
+                    "verified": 1
+                },
+                {
+                    "id": "c7bcc3e4-8a41-459c-b3ba-54e290be2dd9",
+                    "author": "jimmydin7",
+                    "text": "hm",
+                    "timestamp": "2023-05-06 14:11",
+                    "verified": 0
+                },
+                {
+                    "id": "e0f05de4-d15a-4526-870c-697005c8360a",
+                    "author": "xJmd",
+                    "text": "What is MCC? I guess it has to do with Minecraft ?!?!?!",
+                    "timestamp": "2023-05-06 14:11",
+                    "verified": 0
                 }
             ],
-            "likes": 0,
-            "comment-count": 1
+            "likes": 0
         },
         {
-            "id": "eb773fbb-47d0-430a-908b-a58283808a7b",
-            "title": "Please answer! I have a question!",
-            "description": "I need help with AI, please tell me what it is",
-            "author": "Anonymous",
-            "timestamp": "2023-05-02 06:43",
-            "tags": [],
-            "comments": [],
-            "likes": 0,
-            "comment-count": 0
-        },
-        {
-            "id": "eb235d8e-dd19-4ebf-974b-19a540e58162",
-            "title": "What is AI?",
-            "description": "Please answer, I need help!",
-            "author": "Anonymous",
-            "timestamp": "2023-05-02 06:42",
-            "tags": [],
-            "comments": [],
-            "likes": 0,
-            "comment-count": 0
-        },
-        {
-            "id": "643b1865-d74a-47a1-8210-6cc2161a2179",
-            "title": "k,",
-            "description": "Mindstream is a platform designed for individuals to create and share their own personal blogs. The platform allows users to connect with friends, family, and other individuals who share similar interests. Users can upload blog posts on various topics, including but not limited to lifestyle, travel, food, and technology. The platform also provides tools for users to customize their blog's appearance, such as choosing themes and layouts. Additionally, Mindstream offers features such as comments, likes, and shares to encourage engagement and interaction between users. Overall, Mindstream is a user-friendly platform that provides individuals with an avenue to express their thoughts and connect with others who share similar interests.",
-            "author": "Anonymous",
-            "timestamp": "2023-05-02 06:35",
-            "tags": [],
-            "comments": [],
-            "likes": 0,
-            "comment-count": 0
-        },
-        {
-            "id": "7efdb427-552b-43c7-bcbe-0f54cd682afb",
-            "title": "Please answer! I have a question!",
-            "description": "So I am getting a new pc, with a ryzen 7 and an rtx 3060 Ti! How muvh fps will I get with feather client in minecraft?",
+            "id": "99c7a5f3-f436-4845-aba2-662e6426f487",
+            "title": "I need help with maths",
+            "description": "does 5^3 mean 5 x 5 x 5??",
             "author": "jimmydin7",
-            "timestamp": "2023-04-29 14:28",
+            "timestamp": "2023-05-06 14:00",
             "tags": [],
-            "comments": [],
-            "likes": 0,
-            "comment-count": 0
+            "comments": [
+                {
+                    "id": "c98d995f-1997-4a4d-bfe4-2128ecc0076e",
+                    "author": "Thbop",
+                    "text": "yes",
+                    "timestamp": "2023-05-06 14:21",
+                    "verified": 1
+                }
+            ],
+            "likes": 0
         },
         {
-            "id": "b58441e6-6796-42aa-9404-4c22128f66b1",
-            "title": "Hi",
-            "description": "Yo, wassup",
+            "id": "77b7aab7-b07b-49a1-bad5-7571eb294cd5",
+            "title": "New math question:",
+            "description": "What are the values of x for this equation: x^3 - 36x^2 - 1701x? Please no cheating, or else I'll do an equation with imaginary roots.",
+            "author": "Cringer2000",
+            "timestamp": "2023-05-06 13:55",
+            "tags": [],
+            "comments": [
+                {
+                    "id": "b5e5ff0c-fa50-48fa-a206-fb0c7376f434",
+                    "author": "jimmydin7",
+                    "text": "wait, i am stupid. @Cringer2000, does 5^3 mean 5 x 5 x 5?? ",
+                    "timestamp": "2023-05-06 13:59"
+                },
+                {
+                    "id": "ab6b9241-10aa-47dd-91ab-d38356235c4d",
+                    "author": "jimmydin7",
+                    "text": "uhm, let me try it out",
+                    "timestamp": "2023-05-06 13:58"
+                }
+            ],
+            "likes": 0
+        },
+        {
+            "id": "855f2abb-c025-4e97-bf3c-ccb86e2aa85b",
+            "title": "hi",
+            "description": "hi i guess",
+            "author": "BlueBoy3845",
+            "timestamp": "2023-05-06 12:03",
+            "tags": [],
+            "comments": [
+                {
+                    "id": "c8c8dcb6-b930-4398-873f-552f7a11632d",
+                    "author": "Thbop",
+                    "text": "Hello\r\n",
+                    "timestamp": "2023-05-06 13:45"
+                },
+                {
+                    "id": "22abdd9e-e78a-43f1-bd41-1085dbe616d4",
+                    "author": "jimmydin7",
+                    "text": "hello! what's up? mindstream is a new social media app!",
+                    "timestamp": "2023-05-06 13:40"
+                }
+            ],
+            "likes": 0
+        },
+        {
+            "id": "1abc7319-3c33-4a33-bba4-e265e51c318d",
+            "title": "Facts you didn't know!",
+            "description": "Did you know that Mindstream has a YouTube channel? Go Subscribe now! youtube.com/@mindstreamhindbrain",
             "author": "jimmydin7",
-            "timestamp": "2023-04-29 14:27",
+            "timestamp": "2023-05-05 18:32",
             "tags": [],
-            "comments": [],
-            "likes": 0,
-            "comment-count": 0
+            "comments": [
+                {
+                    "id": "7ec178e4-5d57-42f4-9b4a-95eb66bcb712",
+                    "author": "Thbop",
+                    "text": "test",
+                    "timestamp": "2023-05-06 10:37",
+                    "verified": 0
+                }
+            ],
+            "likes": 0
         },
         {
-            "id": "8969bf9b-6240-4f2e-9f35-83a8fbc87673",
-            "title": "Daily Shop",
-            "description": "Hello my nickname is Nikolis32 and I am one of the Daily's shop Owner. The Daily Shop is a discord shop that you can buy every hacking tool that you wan't join now for more infos discord link: https://discord.gg/tH8a8STj2J",
-            "author": "Nikolis32",
-            "timestamp": "2023-04-28 19:47",
+            "id": "30233f9a-0c99-4763-870a-20c81bc715f1",
+            "title": "OMG I AM A GENIUS",
+            "description": "Does IQ come from \"Intelligence\"?? IQ = IG = I ntelli G ence",
+            "author": "jimmydin7",
+            "timestamp": "2023-05-05 18:06",
+            "tags": [],
+            "comments": [
+                {
+                    "id": "fdcef53f-a325-4969-b1ef-9f3f7404fa88",
+                    "author": "jimmydin7",
+                    "text": "Oh okay, thanks for letting me know. It turns out I am more stupid than a rock.",
+                    "timestamp": "2023-05-05 18:11"
+                },
+                {
+                    "id": "0717d1fb-2e6b-40b4-a599-79d4810876a1",
+                    "author": "Cringer2000",
+                    "text": "Intelligence Quotient, whoops",
+                    "timestamp": "2023-05-05 18:09"
+                },
+                {
+                    "id": "c8b25bc7-931b-4f5b-b283-92b38269fc58",
+                    "author": "Cringer2000",
+                    "text": "IQ means: https://en.wikipedia.org/wiki/Intelligence_quotient Sorry",
+                    "timestamp": "2023-05-05 18:08"
+                }
+            ],
+            "likes": 0
+        },
+        {
+            "id": "ff6a3d66-d6c3-4c61-9cbf-34d2ee033b65",
+            "title": "If you laugh you go to hell!",
+            "description": "https://youtube.com/shorts/6kYmLbWNQwc?feature=share",
+            "author": "jimmydin7",
+            "timestamp": "2023-05-05 18:01",
             "tags": [],
             "comments": [],
-            "likes": 0,
-            "comment-count": 0
+            "likes": 0
+        },
+        {
+            "id": "2135a5a8-b95b-421f-8c0a-788ff643759c",
+            "title": "If you laugh you die",
+            "description": "Autocorrect can go straight to he\u2019ll. \u2014Constance Normandeau",
+            "author": "jimmydin7",
+            "timestamp": "2023-05-05 18:00",
+            "tags": [],
+            "comments": [
+                {
+                    "id": "c917247b-d1cd-4054-961d-0d2634abdb3f",
+                    "author": "jimmydin7",
+                    "text": "This joke needs great \"intelligence\" to understand.",
+                    "timestamp": "2023-05-05 18:05"
+                },
+                {
+                    "id": "235e28ef-f749-408b-b3dd-8c67044f739d",
+                    "author": "Thbop",
+                    "text": "hmm",
+                    "timestamp": "2023-05-05 18:04"
+                }
+            ],
+            "likes": 0
+        },
+        {
+            "id": "5e0b76b3-b575-49a7-9edf-941236c83b04",
+            "title": "Joke: Did you hear about the mathematician who\u2019s afraid of negative numbers?",
+            "description": "He\u2019ll stop at nothing to avoid them.",
+            "author": "str8",
+            "timestamp": "2023-05-05 17:53",
+            "tags": [],
+            "comments": [
+                {
+                    "id": "85b22de0-07cc-4a35-8bce-7dd39a302316",
+                    "author": "jimmydin7",
+                    "text": "it's actually funny",
+                    "timestamp": "2023-05-05 18:00"
+                },
+                {
+                    "id": "2f565222-4372-4cb0-becf-235ca598307c",
+                    "author": "jimmydin7",
+                    "text": "should I laugh or not?? nvm HAHAHAHAHHAHAHAHAH",
+                    "timestamp": "2023-05-05 17:58"
+                },
+                {
+                    "id": "b186e4e6-f406-417f-b78c-16e22ba31fae",
+                    "author": "str8",
+                    "text": "HAHAHAHAHAHHA",
+                    "timestamp": "2023-05-05 17:58"
+                },
+                {
+                    "id": "cd001085-b093-441c-9613-0408db4c8e1b",
+                    "author": "Thbop",
+                    "text": "ha, ok",
+                    "timestamp": "2023-05-05 17:57"
+                },
+                {
+                    "id": "53d1e953-a372-49c9-8a5f-0e2fb55a6bea",
+                    "author": "Cringer2000",
+                    "text": "Since nothing is zero, the mathematician stops at zero maintaining a strict whole number policy.",
+                    "timestamp": "2023-05-05 17:56"
+                }
+            ],
+            "likes": 0
+        },
+        {
+            "id": "46d3776f-9148-491b-8351-543f9400bcf3",
+            "title": "Another Math Problem",
+            "description": "What number is x? x + (x + 1) = 233 ",
+            "author": "jimmydin7",
+            "timestamp": "2023-05-05 17:39",
+            "tags": [],
+            "comments": [
+                {
+                    "id": "8c8df179-dcf6-4688-a2a3-782df5b3486e",
+                    "author": "Thbop",
+                    "text": "test",
+                    "timestamp": "2023-05-06 10:36",
+                    "verified": 1
+                },
+                {
+                    "id": "e1b258b6-e98e-4376-8359-b7e643fe87e0",
+                    "author": "Thbop",
+                    "text": "Good job @Cringer2000",
+                    "timestamp": "2023-05-05 17:58",
+                    "verified": 1
+                },
+                {
+                    "id": "d08c2598-bad9-4184-893e-f0ef60be2fd3",
+                    "author": "jimmydin7",
+                    "text": "Yeah! Nice! It wasn't that hard. Now put one for me that's harder",
+                    "timestamp": "2023-05-05 17:50",
+                    "verified": 0
+                },
+                {
+                    "id": "383cf1ed-e424-4a0d-81c3-3f5a2e4ddf49",
+                    "author": "Cringer2000",
+                    "text": "First: x + (x + 1) = 233 can be simplified to x + x + 1 = 233. Then we can simplify further: 2x = 232. And finally, x = 232/2 = 116. The answer is 116.",
+                    "timestamp": "2023-05-05 17:45",
+                    "verified": 0
+                }
+            ],
+            "likes": 0
+        },
+        {
+            "id": "7d10836f-ee79-44fa-bf13-8396af69659e",
+            "title": "Simple math problem.",
+            "description": "Anyone know the function in which this is true: f'(x) = f''(x)? This question is kinda a: \"If you know, you know. If not, you're totally confused!\"",
+            "author": "Cringer2000",
+            "timestamp": "2023-05-05 17:24",
+            "tags": [],
+            "comments": [
+                {
+                    "id": "86517a7e-08f0-406f-9015-438dc0c195b1",
+                    "author": "Cringer2000",
+                    "text": "Yeah, that's correct @Thbop",
+                    "timestamp": "2023-05-05 18:09"
+                },
+                {
+                    "id": "bf1b9cb3-8416-4811-a6e7-3a942e938d93",
+                    "author": "Thbop",
+                    "text": "e^x",
+                    "timestamp": "2023-05-05 17:58"
+                },
+                {
+                    "id": "4df3c257-0d1a-4fbd-ae49-364197111b12",
+                    "author": "Cringer2000",
+                    "text": "That is some strange notation @bEaNs. It looks somewhat close from what I can tell. I'll leave it unanswered for a bit longer and then I'll comment the answer.",
+                    "timestamp": "2023-05-05 17:47"
+                },
+                {
+                    "id": "8f8261ea-6974-4763-8a24-79aff0a09983",
+                    "author": "jimmydin7",
+                    "text": "\"I wish I new math and didn't sit on my PC 25 hours a day and programmed all time long\"",
+                    "timestamp": "2023-05-05 17:37"
+                },
+                {
+                    "id": "4338c805-bc4f-468f-a657-fdfc51a15de6",
+                    "author": "bEaNs",
+                    "text": "solution for all: f\\left(x\\right)=c_1+c_2e^x (disclaimer, it MAY(it is) be wrong)",
+                    "timestamp": "2023-05-05 17:33"
+                }
+            ],
+            "likes": 0
+        },
+        {
+            "id": "18263b5e-9125-4238-b137-3ebe52477aba",
+            "title": "I need a new PC",
+            "description": "Hello! Does anyone have suggestions for a 1300\u20ac PC for multitasking and minecraft?",
+            "author": "clinkclick8",
+            "timestamp": "2023-05-05 16:27",
+            "tags": [],
+            "comments": [
+                {
+                    "id": "c0cf4ac4-9b3c-4d9b-9d94-aab6224b8cd3",
+                    "author": "clinkclick8",
+                    "text": "Okay thanks! I was thinking getting the HP OMEN 25L, which is around 1500\u20ac in other countries, but there was a special offer for my country and could only get it for 1299\u20ac. It has an rtx 3060 ti and a ryzen 7!",
+                    "timestamp": "2023-05-05 16:33"
+                },
+                {
+                    "id": "5556c95f-5ed8-42c8-84b0-cdb3eea33ab6",
+                    "author": "Cringer2000",
+                    "text": "No sorry. Maybe try building your own. Its pretty fun and it allows for an extremely high level of customization. Check out this resource: https://pcpartpicker.com/",
+                    "timestamp": "2023-05-05 16:30"
+                }
+            ],
+            "likes": 0
+        },
+        {
+            "id": "2604de10-9083-4d5c-99b6-48fdcbd09158",
+            "title": "Hi, this is my firsrt mindstream post!",
+            "description": "I thought id try this app out to try to get the @Verified Mindstreamer role on discord. Yes, those are my intentions, kinda odd right?",
+            "author": "Cringer2000",
+            "timestamp": "2023-05-05 16:25",
+            "tags": [],
+            "comments": [
+                {
+                    "id": "4c5ef8ef-f215-4693-ac1b-1d0a1cd169fd",
+                    "author": "Thbop",
+                    "text": "Yes, @jimmydin7 is one of the devs for Mindstream.",
+                    "timestamp": "2023-05-05 16:48"
+                },
+                {
+                    "id": "b441e29c-27e8-4ab6-9df1-f2d504b8b0b6",
+                    "author": "Cringer2000",
+                    "text": "Are you a community manager @jimmydin7? ",
+                    "timestamp": "2023-05-05 16:31"
+                },
+                {
+                    "id": "438781b1-8333-49d8-a9fb-6d06ada21bcd",
+                    "author": "jimmydin7",
+                    "text": "Keep being active and I ensure you that you will achieve your goal of getting the rank!",
+                    "timestamp": "2023-05-05 16:30"
+                },
+                {
+                    "id": "d0a9409d-5eb8-49e8-853f-701f23e94018",
+                    "author": "bEaNs",
+                    "text": "Good Luck!\r\n",
+                    "timestamp": "2023-05-05 16:26"
+                },
+                {
+                    "id": "d0cb8794-6008-48ab-98b9-9b8f13b5d10a",
+                    "author": "clinkclick8",
+                    "text": "Well.. I wish you the best of luck!!!",
+                    "timestamp": "2023-05-05 16:26"
+                }
+            ],
+            "likes": 0
+        },
+        {
+            "id": "051bb009-0f98-4402-829b-764a25905d63",
+            "title": "Anyone playing Minecraft",
+            "description": "I need someone to play survival 1.19",
+            "author": "str8",
+            "timestamp": "2023-05-05 15:48",
+            "tags": [],
+            "comments": [
+                {
+                    "id": "6f34ad28-28f9-4eb1-9017-97c12d7243da",
+                    "author": "Nebula",
+                    "text": "me but cant atm",
+                    "timestamp": "2023-05-05 16:16"
+                },
+                {
+                    "id": "553dd3ce-9605-48c4-b367-db02175ee5c4",
+                    "author": "str8",
+                    "text": "Okay!",
+                    "timestamp": "2023-05-05 16:12"
+                },
+                {
+                    "id": "8aeb48b6-dce0-4e74-b820-6fc8e49baf78",
+                    "author": "Thbop",
+                    "text": "Sorry, I don't play Survival that much. If you're actually xJmd, maybe sometime temporarily",
+                    "timestamp": "2023-05-05 15:51"
+                }
+            ],
+            "likes": 0
+        },
+        {
+            "id": "ae3f50d3-f954-44a2-82ff-5e6cdc28c078",
+            "title": "pvp goat",
+            "description": "minecraft",
+            "author": "Nebula",
+            "timestamp": "2023-05-05 15:41",
+            "tags": [],
+            "comments": [
+                {
+                    "id": "52388f01-34f3-4992-8e03-12f15b63e085",
+                    "author": "Thbop",
+                    "text": "Sorry, I was asking if @str8 is xJmd or @jimmydin7\r\n",
+                    "timestamp": "2023-05-05 16:50"
+                },
+                {
+                    "id": "029bce8c-53e5-4b4f-8c99-9e82d8bd9e57",
+                    "author": "str8",
+                    "text": "no, Nebula is my friend",
+                    "timestamp": "2023-05-05 16:13"
+                },
+                {
+                    "id": "bb502b3a-b490-464c-bb0d-5149dfbd8cdb",
+                    "author": "Thbop",
+                    "text": "I literally already have 4 alt accounts for Mindstream",
+                    "timestamp": "2023-05-05 15:49"
+                },
+                {
+                    "id": "cba4e603-b82e-4756-ac56-f6163cb8dd40",
+                    "author": "Thbop",
+                    "text": "You are, @str8?",
+                    "timestamp": "2023-05-05 15:48"
+                },
+                {
+                    "id": "6e5a27f6-1e8e-42d8-b9f1-5cb195009cc8",
+                    "author": "Thbop",
+                    "text": "Technoblade probably was the PvP GOAT.\r\nI'm not into PvP that much though, so my opinion probably isn't very valid",
+                    "timestamp": "2023-05-05 15:48"
+                },
+                {
+                    "id": "52e02680-c698-49c9-91b4-732011ee7d01",
+                    "author": "str8",
+                    "text": "woohoo i am xJmd",
+                    "timestamp": "2023-05-05 15:47"
+                }
+            ],
+            "likes": 0
+        },
+        {
+            "id": "198dd15f-9301-48ec-b6d2-a015b5776558",
+            "title": "Youtube",
+            "description": "Hello world!!!",
+            "author": "bEaNs",
+            "timestamp": "2023-05-05 15:12",
+            "tags": [],
+            "comments": [
+                {
+                    "id": "715d2bc8-957e-4747-a321-f7298948d236",
+                    "author": "Thbop",
+                    "text": "Hello",
+                    "timestamp": "2023-05-05 15:29"
+                }
+            ],
+            "likes": 0
+        },
+        {
+            "id": "40a15a05-2b9d-4684-aa44-3218350702db",
+            "title": "You like Lo-Fi?",
+            "description": "We haven't added links yet, but I thought I'd share this sweet Star Wars Lofi track. I usually listen  to Lofi when coding and this one's pretty awesome! I will say though, it does get a little repetitive on like one song, but besides that, it's good: https://youtu.be/5tQnmbcbL1Q",
+            "author": "Thbop",
+            "timestamp": "2023-05-05 13:23",
+            "tags": [],
+            "comments": [
+                {
+                    "id": "9e601e79-4bbe-438a-acc3-8e04dcbec532",
+                    "author": "bEaNs",
+                    "text": "YEES \r\n",
+                    "timestamp": "2023-05-05 13:59"
+                }
+            ],
+            "likes": 0
+        },
+        {
+            "id": "642435ce-750b-485f-b9fc-9a4acbaff50b",
+            "title": "hello",
+            "description": "hello guys subscribe to wildabbee",
+            "author": "WildAbbee",
+            "timestamp": "2023-05-05 11:27",
+            "tags": [],
+            "comments": [
+                {
+                    "id": "9f2b6b1a-41e5-4698-a336-06f70f69cdec",
+                    "author": "Thbop",
+                    "text": "huh",
+                    "timestamp": "2023-05-05 14:09"
+                },
+                {
+                    "id": "eaa843fa-84c9-4475-bb71-7d999c7f20a6",
+                    "author": "jimmydin7",
+                    "text": "omg omg omg i cant believe it! my favourite youtbebererewr\r\n",
+                    "timestamp": "2023-05-05 11:28"
+                }
+            ],
+            "likes": 0
+        },
+        {
+            "id": "e100b0e2-7501-4c7b-b939-a6a436b59a50",
+            "title": "Notice something new?",
+            "description": "The dev team has been crunching and we finally added profile pages with @<username>'s. There's definitely more coming soon, so stay tuned for more updates on discord or right here on Mindstream!",
+            "author": "Thbop",
+            "timestamp": "2023-05-05 04:24",
+            "tags": [],
+            "comments": [
+                {
+                    "id": "eed61f1c-a857-4bb3-89a5-63c59df27ccf",
+                    "author": "Thethingbegind",
+                    "text": "Woohooo!!!!!",
+                    "timestamp": "2023-05-05 05:01"
+                }
+            ],
+            "likes": 0
+        },
+        {
+            "id": "c3da8ccb-8643-4404-89f5-7fc9172050be",
+            "title": "Hello",
+            "description": "How is everyone doing???",
+            "author": "gaga",
+            "timestamp": "2023-05-04 16:03",
+            "tags": [],
+            "comments": [
+                {
+                    "id": "904a13e9-5a5c-4d6c-931f-8c81106a2f84",
+                    "author": "Thbop",
+                    "text": "Doing mighty fine as well.",
+                    "timestamp": "2023-05-05 02:02"
+                },
+                {
+                    "id": "a5d18b1a-7623-4fbc-8de2-eebf909e4bbf",
+                    "author": "jimmydin7",
+                    "text": "Good! How are you?",
+                    "timestamp": "2023-05-04 16:10"
+                }
+            ],
+            "likes": 0
+        },
+        {
+            "id": "ee36190a-4ec7-403d-9364-79008892cb0d",
+            "title": "Clyde: Discord's AI Chatbot",
+            "description": "Clyde is Discord\u2019s AI chat integration for your server, which uses OpenAI technology, and is ready to hang out with you and your friends. Clyde is an experimental feature and currently free to try out as soon as it is available in your server.",
+            "author": "jimmydin7",
+            "timestamp": "2023-05-04 15:40",
+            "tags": [],
+            "comments": [
+                {
+                    "id": "5a0c38ca-3c39-4266-b40e-7e6d648bdb6d",
+                    "author": "Thbop",
+                    "text": "Test",
+                    "timestamp": "2023-05-06 10:36",
+                    "verified": 1
+                },
+                {
+                    "id": "eb70b4dd-7b93-4db2-8a3c-94bd893d8a8b",
+                    "author": "jimmydin7",
+                    "text": "Clyde is so good!",
+                    "timestamp": "2023-05-04 15:40",
+                    "verified": 0
+                },
+                {
+                    "id": "1ef24008-b638-4657-8600-bdc9adf5bb17",
+                    "author": "jimmydin7",
+                    "text": "I don't know, but there still seem to be some problems such as past comments appearing on new posts by their own! \r\n ",
+                    "timestamp": "2023-05-04 14:45",
+                    "verified": 0
+                },
+                {
+                    "id": "5dddf3ee-e48c-4cae-836e-2774f9bfd977",
+                    "author": "Thbop",
+                    "text": "Yeah, I was noticing some weird problems. I wonder why it was doing that...",
+                    "timestamp": "2023-05-04 13:11",
+                    "verified": 1
+                }
+            ],
+            "likes": 0
+        },
+        {
+            "id": "4b258730-58ce-4f39-b35f-b1f49c462472",
+            "title": "Mindstream Announcement",
+            "description": "Hello guys, I am the CEO of Mindstream. I am sorry to let you know, but we faced some problems and all of the past posts in our database had to be deleted. Now we are back and strong! Thanks for using Mindstream!",
+            "author": "jimmydin7",
+            "timestamp": "2023-05-04 11:28",
+            "tags": [],
+            "comments": [
+                {
+                    "id": "eb70b4dd-7b93-4db2-8a3c-94bd893d8a8b",
+                    "author": "jimmydin7",
+                    "text": "Clyde is so good!",
+                    "timestamp": "2023-05-04 15:40"
+                },
+                {
+                    "id": "1ef24008-b638-4657-8600-bdc9adf5bb17",
+                    "author": "jimmydin7",
+                    "text": "I don't know, but there still seem to be some problems such as past comments appearing on new posts by their own! \r\n ",
+                    "timestamp": "2023-05-04 14:45"
+                },
+                {
+                    "id": "5dddf3ee-e48c-4cae-836e-2774f9bfd977",
+                    "author": "Thbop",
+                    "text": "Yeah, I was noticing some weird problems. I wonder why it was doing that...",
+                    "timestamp": "2023-05-04 13:11"
+                }
+            ],
+            "likes": 0
+        },
+        {
+            "id": "aa55942d-2592-49df-8d4b-b75ab8377ae9",
+            "title": "Hey people, it's raytracing time!",
+            "description": "You like raytracing, well of course you do, who doesn't?\r\nAt this time I'm following Peter Shirley's amazing raytracing tutorial in.... Python.\r\n\r\nIssue is, Python's very slow for raytracing, yet I'm still chugging along, just a little slower than our C++ friends.\r\n\r\nCheck out my progress on our discord in the #other channel\r\n\r\nCheck out Shirley's books here: https://raytracing.github.io/",
+            "author": "Thbop",
+            "timestamp": "2023-05-02 13:19",
+            "tags": [],
+            "comments": [],
+            "likes": 0
         },
         {
             "id": "18fd23ad-4b93-4752-9ef0-2bc95e1706e7",
@@ -160,8 +844,7 @@
             "timestamp": "2023-04-28 19:10",
             "tags": [],
             "comments": [],
-            "likes": 0,
-            "comment-count": 0
+            "likes": 0
         },
         {
             "id": "c94b875c-cf1e-4da7-b4f9-688d8f109e34",
@@ -171,30 +854,7 @@
             "timestamp": "2023-04-28 16:10",
             "tags": [],
             "comments": [],
-            "likes": 0,
-            "comment-count": 0
-        },
-        {
-            "id": "b47e6237-850d-4f7a-a0c4-31fbc7aff7e9",
-            "title": "Hello",
-            "description": "Test",
-            "author": "Anonymous",
-            "timestamp": "2023-04-28 16:08",
-            "tags": [],
-            "comments": [],
-            "likes": 0,
-            "comment-count": 0
-        },
-        {
-            "id": "586b3e96-05d4-494a-a2f5-1f9dac406921",
-            "title": "Backend dev flex",
-            "description": "I'm one of the backend devs, you MUST ALL BOW BEFORE ME OR PERISH!!",
-            "author": "Thbop",
-            "timestamp": "2023-04-28 15:57",
-            "tags": [],
-            "comments": [],
-            "likes": 0,
-            "comment-count": 0
+            "likes": 0
         },
         {
             "id": "ab160571-c79c-42ad-86c9-a0885bc2914a",
@@ -204,8 +864,7 @@
             "timestamp": "2023-04-28 15:53",
             "tags": [],
             "comments": [],
-            "likes": 0,
-            "comment-count": 0
+            "likes": 0
         },
         {
             "id": "f78503bb-eb34-4595-9c6a-8f8bddeeec2b",
@@ -214,9 +873,21 @@
             "author": "jimmydin7",
             "timestamp": "2023-04-28 15:46",
             "tags": [],
-            "comments": [],
-            "likes": 0,
-            "comment-count": 0
+            "comments": [
+                {
+                    "id": "01d487b0-9ea4-4e2c-9d5e-8e429f860da1",
+                    "author": "Thbop",
+                    "text": "ok, yeah",
+                    "timestamp": "2023-05-05 16:50"
+                },
+                {
+                    "id": "6d76e176-d5cf-4dfb-897a-835740ca0fe4",
+                    "author": "str8",
+                    "text": "OMG :D THANKS SO MUCH!!! I MADE MY FIRST 50$ IN 1 WEEK!",
+                    "timestamp": "2023-05-04 15:46"
+                }
+            ],
+            "likes": 0
         },
         {
             "id": "ec49a8cc-75d1-4252-8417-b6a85fcd1fb8",
@@ -226,8 +897,7 @@
             "timestamp": "2023-04-28 15:43",
             "tags": [],
             "comments": [],
-            "likes": 0,
-            "comment-count": 0
+            "likes": 0
         },
         {
             "id": "c15816c8-9304-40f8-b476-caad57e2c108",
@@ -237,8 +907,7 @@
             "timestamp": "2023-04-28 15:43",
             "tags": [],
             "comments": [],
-            "likes": 0,
-            "comment-count": 0
+            "likes": 0
         }
     ]
 }

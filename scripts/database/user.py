@@ -12,8 +12,8 @@ class User:
             'followers': [],
             'following': [],
             'first-joined': 'Alpha',
-            'permission-level':0,
-            'verified': 'false'
+            'permission-level': 0,
+            'verified': 0
         }
         self.db = db
     
@@ -58,8 +58,8 @@ class User:
                 'followers': [],
                 'following': [],
                 'first-joined': self._timestamp(),
-                'permission-level':0,
-                'verified': 'false'
+                'permission-level': 0,
+                'verified': 0
             }
 
             self.db.data['users'].append(user)
@@ -159,7 +159,7 @@ class User:
             'first-joined': user['first-joined'],
             'posts': posts,
             'comments': comments,
-            'verified': user.get('verified')
+            'verified': user['verified']
 
         }
         return info
