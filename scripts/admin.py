@@ -71,6 +71,8 @@ class Admin:
                     for k in self.handler.user.default_user:
                         if isinstance(self.handler.user.default_user[k], int):
                             e_user[k] = int(request.form.get(k))
+                        elif isinstance(self.handler.user.default_user[k], list):
+                            pass
                         else:
                             e_user[k] = request.form.get(k)
                     self.handler.db.save()

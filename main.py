@@ -46,7 +46,10 @@ def feed():
     posts_sorted = sorted(posts, key=itemgetter("timestamp"), reverse=True)
     for p in posts_sorted:
         p_author = handler.user.get_name(p['author'])
-        p['verified'] = p_author['verified']
+        if p_author != None:
+            p['verified'] = p_author['verified']
+        else:
+            p['verified'] = False
         p['comment-count'] = len(p['comments'])
     return render_template("feed.html", posts=posts_sorted, user=handler.user.get( request.cookies.get('key') ))
 
