@@ -2,8 +2,7 @@
 
 ## Overview
 
-Mindstream is a social media application designed for users to create, share, and interact with content. This repository is a reupload of a previously private project developed in collaboration with a former associate. It contains personal updates and improvements.
-
+Mindstream is a social media application designed for users to create, share, and interact with content.
 ## Features
 
 - **User Posts**: Users can create and upload posts with a title and description.
@@ -20,7 +19,7 @@ To set up and run the application locally, follow these steps:
 1. **Clone the Repository**:
 
     ```bash
-    git clone https://github.com/jimmydin7/mindstream.git
+    git clone https://github.com/BlackCatCo/Mindstream.git
     cd mindstream
     ```
 
