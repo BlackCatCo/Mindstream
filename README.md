@@ -45,8 +45,5 @@ You can also access the live application via the following URL:
 
 [Mindstream](https://mindstream.pythonanywhere.com)
 
-## Notes
-
-- This repository is a personal update of an older project.
-- For any issues or contributions, please post a new issue [here](https://github.com/BlackCatCo/Mindstream/issues).
-- The database for this application is currently managed using a JSON file.
+## Issues
+For any issues or contributions, please post a new issue [here](https://github.com/BlackCatCo/Mindstream/issues).
