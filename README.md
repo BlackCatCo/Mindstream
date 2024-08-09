@@ -25,10 +25,10 @@ To set up and run the application locally, follow these steps:
 
 2. **Install Dependencies**:
 
-    Ensure you have Python installed. Then, install the required dependencies using the provided `requirements.txt` file:
+    Ensure you have Python installed. Then, install Flask:
 
     ```bash
-    pip install -r requirements.txt
+    pip install flask # or pip3
     ```
 
 3. **Run the Application**:
@@ -36,7 +36,7 @@ To set up and run the application locally, follow these steps:
     Execute the main application script:
 
     ```bash
-    python main.py
+    python main.py # or python3
     ```
 
 ## Access
